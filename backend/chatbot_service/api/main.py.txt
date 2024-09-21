@@ -1,0 +1,13 @@
+
+
+from chatbot_service.domain.chatbot import  Chatbot
+
+bot = Chatbot(api_key, top_k)
+
+@chatbot(/query):
+def query(str):
+	...
+	
+	answer = bot.query(str)
+	return answer
+	
