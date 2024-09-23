@@ -47,5 +47,48 @@ def crawl_lich_su_truyen_thong():
         print(f'Lỗi: Không thể truy cập trang. Mã trạng thái: {response.status_code}')
 
 
+def crawl_nguon_nhan_luc():
+    url = 'https://ptit.edu.vn/gioi-thieu/nguon-nhan-luc'
+    # Gui y/c den trang web
+    response = requests.get(url)
+    # Kiem tra xem y/c co thanh cong khong
+    if response.status_code == 200:
+        # Phan tich HTML
+        soup = BeautifulSoup(response.content, 'html.parser')
+        # Tieu de
+        title = soup.title.string
+        # Truy cap vao body
+        body = soup.find('div', class_ = 'e-con-inner')
+        content_body = body.find_all(['span'])
+        # Ket hop noi dung vao chuoi
+        content = "\n".join([p.get_text() for p in content_body]) # Xuong dong o moi lan het 1 doan van ban
+        # Luu du lieu vao data folder
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'nguon_nhan_luc.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title}\n\n')
+            f.write(content)
+    else:
+        print(f'Loi: Khong the truy cap trang. Ma trang thai: {response.status_code}')    
+
+def crawl_co_so_vat_chat():
+    url = 'https://ptit.edu.vn/gioi-thieu/co-so-vat-chat'
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        title = soup.title.string
+        body = soup.find('div', class_='e-con-inner')
+        content_body = body.find_all(['p'])
+        content = "\n".join(p.get_text() for p in content_body)
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'co_so_vat_chat.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title}\n\n')
+            f.write(content)
+    else:
+        print(f'Loi: Khong the truy cap trang. Ma trang thai:{response.status_code}')
+
+
+
 if __name__ == '__main__':
     crawl_lich_su_truyen_thong()
+    crawl_nguon_nhan_luc()
+    crawl_co_so_vat_chat()
