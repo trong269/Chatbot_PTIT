@@ -1,0 +1,175 @@
+Tiêu đề: Chương trình Công nghệ thông tin Việt – Nhật – PTIT – Đào tạo
+
+Mã ngành: 7480201_VNH
+Thời gian: 4,5 năm
+Kỳ nhập học: Mùa thu
+Cơ sở: Hà Nội
+
+
+Tổng quan
+Chương trình Công nghệ thông tin Việt - Nhật của Học viện tập trung vào việc đào tạo những kỹ sư Công nghệ thông tin có trình độ cao định hướng theo thị trường Nhật Bản. Sinh viên sẽ được trang bị kiến thức chuyên môn, kỹ năng thực hành nghề nghiệp, khả năng sáng tạo để giải quyết các vấn đề trong lĩnh vực công nghệ thông tin. Bên cạnh đó, sinh viên cũng sẽ được đào tạo trình độ ngoại ngữ tiếng Nhật tương đương N3 để nâng cao khả năng giao tiếp và làm việc, tăng khả năng thành công khi tham gia vào doanh nghiệp Nhật Bản. Đặc biệt, Chương trình kỹ sư công nghệ thông tin Việt - Nhật được thiết kế theo tiêu chuẩn kỹ sư công nghệ thông tin Nhật Bản ITSS (Skill Standards for Information Technology Professionals) nhằm giúp các sinh viên có thể phát triển tốt nhất các kỹ năng và năng lực của mình trong công việc tương lai. Sau khi hoàn thành chương trình, sinh viên sẽ có đủ năng lực để đạt được các chứng chỉ chuyên nghiệp theo tiêu chuẩn kỹ sư công nghệ thông tin Nhật bản ITSS như IT Passport (Information Technology Passport Examination), IT FE (Fundamental Information Technology Engineer Examination) đồng thời mở ra cánh cửa nghề nghiệp rộng lớn tại Nhật Bản và trên toàn cầu.
+Chương trình kỹ sư công nghệ thông tin Việt - Nhật được xây dựng với mục tiêu : 
+i – Tăng cường kỹ năng công nghệ thông tin thông qua việc học hỏi và áp dụng công nghệ, quy trình làm việc của Nhật Bản; 
+ii – Phát huy lợi thế đi đầu trong đào tạo nhân lực ngành công nghệ thông tin tại Việt Nam theo định hướng thị trường Nhật Bản; 
+iii – Đào tạo nhân lực ngành công nghệ thông tin có năng lực làm việc chủ động với kỹ năng và trình độ cao, có khả năng học tập và bám sát những thay đổi của công nghệ phục vụ đáp ứng được với tiêu chuẩn nghề nghiệp tại Nhật Bản.
+
+
+
+Chuẩn đầu ra
+1. Chuẩn về kiến thức
+[LO1]: Hiểu biết và nắm vững kiến thức về Lý luận của Chủ nghĩa Mác Lênin và Tư tưởng Hồ Chí Minh, về Pháp luật, về Khoa học tự nhiên; Hiểu biết về an ninh Quốc phòng;
+[LO2]: Nắm vững các kiến thức cơ sở ngành công nghệ thông tin theo tiêu chuẩn kỹ sư công nghệ thông tin Nhật Bản ITSS (Skill Standards for Information Technology Professionals);
+[LO3]: Vận dụng tốt kiến thức cơ bản và chuyên sâu để thiết kế, phát triển cài đặt, vận hành và bảo trì phần mềm phù hợp với các vấn đề thực tế của doanh nghiệp Nhật Bản tại Việt Nam và trên toàn thế giới.
+
+2. Chuẩn về kỹ năng
+2.1. Kỹ năng nghề nghiệp
+[LO4]: Có kỹ năng nghiên cứu, lên kế hoạch, thực hiện, và phân tích thử nghiệm, đồng thời đánh giá sự ứng dụng của công nghệ thông tin trong doanh nghiệp và tổ chức;
+[LO5]: Có kỹ năng thiết kế và phát triển các hệ thống phù hợp với yêu cầu thực tế về môi trường, kinh tế, xã hội, chính trị, văn hoá và bền vững;
+[LO6]: Có kỹ năng phát hiện, mô hình hóa, giải quyết các vấn đề công nghệ cấp thiết, và ứng dụng linh hoạt các kỹ thuật, công cụ công nghệ hiện đại trong thực tiễn;
+[LO7]: Có năng lực và kiến thức để chuyển đổi các lý thuyết và khái niệm kỹ thuật, công nghệ thành các ứng dụng thực tế;
+[LO8]: Có kỹ năng nghiên cứu, thu thập chi tiết về người dùng và thông tin từ đó sử dụng và phân tích các yêu cầu cụ thể một cách an toàn;
+[LO9]: Có hiểu biết cơ bản về công nghệ thông tin nói chung và khả năng sử dụng và áp dụng trong công việc; Có khả năng thiết kế, phát triển, cài đặt hệ thống phần mềm, ứng dụng theo yêu cầu thực tế của thị trường công nghệ thông tin Nhật Bản;
+[LO10]: Có kỹ năng lập kế hoạch và xác định khối lượng công việc cho các dự án thiết kế và phát triển phần mềm;
+[LO11]: Có kỹ năng lên kế hoạch kiểm thử và nghiệm thu, có khả năng thực hiện dự báo, phân tích đánh giá chiến lược thông tin, quản lý và đảm bảo chất lượng của hệ thống phần mềm và xây dựng các tài liệu dự án;
+[LO12]: Có khả năng áp dụng các tri thức một cách sáng tạo vào giải quyết bài toán trong lĩnh vực phát triển phần mềm.
+
+2.2. Kỹ năng mềm
+[LO13]: Có kỹ năng làm việc, tương tác trong các môi trường đa dạng văn hoá, đa ngành; có khả năng thích nghi và đóng góp cho các tổ chức, doanh nghiệp Nhật Bản tại Việt Nam và trên thế giới.
+[LO14]: Có năng lực tiếng Nhật đạt trình độ tương đương N3 trở lên. Có khả năng sử dụng tiếng Nhật chuyên ngành trong học tập, nghiên cứu và làm việc trong lĩnh công nghệ thông tin;
+
+3. Năng lực tự chủ và trách nhiệm
+[LO15]: Khả năng kiểm soát cảm xúc, thái độ, và hành vi của bản thân trong tình huống khó khăn hoặc áp lực với công việc; có trách nhiệm và đạo đức với công việc, sáng tạo trong tìm kiếm giải pháp và khả năng tư duy độc lập trong giải quyết vấn đề;
+[LO16]: Hiểu biết về các ảnh hưởng của các giải pháp công nghệ và các tác động của nó trong ngữ cảnh môi trường, kinh tế, xã hội toàn cầu.
+
+Chương trình Công nghệ thông tin Việt – Nhật
+Học kỳ 1
+Triết học Mác-Lênin: 3 tín chỉ
+Giải tích 1: 3 tín chỉ
+Nhập môn tin học và lập trình: 3 tín chỉ
+Đại số: 3 tín chỉ
+Toán rời rạc: 3 tín chỉ
+
+Học kỳ 2
+Kinh tế chính trị Mác Lênin: 3 tín chỉ
+Tiếng Anh (Course 1): 4 tín chỉ
+Ngôn ngữ lập trình C++: 3 tín chỉ
+Giải tích 2: 3 tín chỉ
+Pháp luật đại cương: 2 tín chỉ
+Tiếng Nhật 2: 3 tín chỉ
+
+Học kỳ 3
+Chủ nghĩa xã hội khoa học: 2 tín chỉ
+Tiếng Anh (Course 2): 4 tín chỉ
+Toán rời rạc 1: 3 tín chỉ
+Vật lý ứng dụng: 4 tín chỉ
+Cấu trúc dữ liệu và giải thuật: 3 tín chỉ
+Tiếng Nhật 3: 3 tín chỉ
+
+Học kỳ 4
+Tư tưởng Hồ Chí Minh: 2 tín chỉ
+Xác suất thống kê: 3 tín chỉ
+Kiến trúc máy tính: 3 tín chỉ
+Toán rời rạc 2: 3 tín chỉ
+Lập trình với Python: 3 tín chỉ
+Lý thuyết thông tin: 3 tín chỉ
+Tiếng Nhật 4: 3 tín chỉ
+
+Học kỳ 5
+Lịch sử Đảng cộng sản Việt Nam: 2 tín chỉ
+Lập trình hướng đối tượng: 3 tín chỉ
+Hệ điều hành: 3 tín chỉ
+Cơ sở dữ liệu: 3 tín chỉ
+Mạng máy tính: 3 tín chỉ
+Phương pháp luận nghiên cứu khoa học: 2 tín chỉ
+Tiếng Nhật 5: 3 tín chỉ
+
+Học kỳ 6
+Nhập môn trí tuệ nhân tạo: 3 tín chỉ
+Nhập môn công nghệ phần mềm: 3 tín chỉ
+Lập trình Web: 3 tín chỉ
+Cơ sở dữ liệu phân tán: 3 tín chỉ
+Tiếng Nhật 6: 3 tín chỉ
+Thực tập cơ sở: 4 tín chỉ
+
+Học kỳ 7
+Phát triển các hệ thống thông minh: 3 tín chỉ
+Quản lý dự án phần mềm: 3 tín chỉ
+Phân tích và thiết kế HTTT: 3 tín chỉ
+Xử lý ảnh: 3 tín chỉ
+PTƯD cho thiết bị di động: 3 tín chỉ
+Cơ sở an toàn thông tin: 3 tín chỉ
+
+Học kỳ 8
+Học phần tự chọn 1: 3 tín chỉ
+Phân tích yêu cầu phần mềm: 3 tín chỉ
+Kiến trúc và thiết kế phần mềm: 3 tín chỉ
+IoT và ứng dụng: 3 tín chỉ
+Phát triển phần mềm hướng dịch vụ: 3 tín chỉ
+Các hệ thống phân tán: 3 tín chỉ
+Tương tác người máy: 3 tín chỉ
+Xây dựng phần mềm an toàn: 3 tín chỉ
+Lập trình mạng: 3 tín chỉ
+Khai phá dữ liệu: 3 tín chỉ
+Tiếng Nhật chuyên ngành: 3 tín chỉ
+Học phần tự chọn 2: 3 tín chỉ
+Phân tích yêu cầu phần mềm: 3 tín chỉ
+Kiến trúc và thiết kế phần mềm: 3 tín chỉ
+IoT và ứng dụng: 3 tín chỉ
+Phát triển phần mềm hướng dịch vụ: 3 tín chỉ
+Các hệ thống phân tán: 3 tín chỉ
+Tương tác người máy: 3 tín chỉ
+Xây dựng phần mềm an toàn: 3 tín chỉ
+Lập trình mạng: 3 tín chỉ
+Khai phá dữ liệu: 3 tín chỉ
+Tiếng Nhật chuyên ngành: 3 tín chỉ
+Học phần tự chọn 3: 3 tín chỉ
+Phân tích yêu cầu phần mềm: 3 tín chỉ
+Kiến trúc và thiết kế phần mềm: 3 tín chỉ
+IoT và ứng dụng: 3 tín chỉ
+Phát triển phần mềm hướng dịch vụ: 3 tín chỉ
+Các hệ thống phân tán: 3 tín chỉ
+Tương tác người máy: 3 tín chỉ
+Xây dựng phần mềm an toàn: 3 tín chỉ
+Lập trình mạng: 3 tín chỉ
+Khai phá dữ liệu: 3 tín chỉ
+Tiếng Nhật chuyên ngành: 3 tín chỉ
+Đảm bảo chất lượng phần mềm: 3 tín chỉ
+Xây dựng các hệ thống nhúng: 3 tín chỉ
+Cơ sở văn hoá Nhật Bản: 3 tín chỉ
+
+Học kỳ 9
+Thực tập và tốt nghiệp: 3 tín chỉ
+
+
+
+
+Nghề nghiệp
+Vị trí công việc chính của sinh viên sau khi ra trường bao gồm:
+
+Chuyên gia lập trình (ứng dụng web, ứng dụng di động, front-end, back-end, phần mềm nhúng…);
+Chuyên gia kiểm thử phần mềm, phân tích nghiệp vụ, phân tích hệ thống, thiết kế hệ thống, quản lý dự án phần mềm;
+Chuyên gia thiết kế và quản trị cơ sở dữ liệu, mạng máy tính;
+Chuyên gia quản lý, điều hành trong lĩnh vực Công nghệ thông tin;
+Chuyên gia an ninh mạng;
+Chuyên gia phân tích dữ liệu;
+Chuyên viên tư vấn bán hàng, chuyên viên tư vấn kỹ thuật;
+Kỹ sư cầu nối Việt-Nhật trong lĩnh vực CNTT.
+
+
+
+
+Học phí
+Học phí sẽ được thanh toán theo từng học kỳ, dựa trên số tín chỉ mà sinh viên đăng ký trong học kỳ. Thời gian đóng học phí là 1 tháng kể từ khi có thông báo của nhà trường. Sinh viên sẽ thực hiện đóng học phí theo quy định mà Học viện ban hành; Học phí năm học 2024-2025 (dự kiến): 1.000.000đ/tín chỉ. Ghi chú: - Thời gian hoàn thành chương trình sẽ phụ thuộc vào số lượng môn học sinh viên lựa chọn học trong một học kỳ. - Lộ trình tăng học phí tối đa cho từng năm: Mức học phí được điều chỉnh theo lộ trình phù hợp tương xứng với chất lượng đào tạo và đảm bảo tỷ lệ tăng không quá 15%/năm (theo Nghị định 81/2021/NĐ-CP của Chính phủ).
+
+
+
+Điều kiện tuyển sinh
+Là người đã tốt nghiệp THPT hoặc tương đương, tham dự và trúng tuyển (đạt các yêu cầu đầu vào) trong kỳ tuyển sinh đại học hệ chính quy với Tổ hợp xét tuyển: Toán, Lý, Hóa (A00 – khối A); hoặc Toán, Lý, Anh văn (A01 – khối A1) hoặc các phương án xét tuyển riêng của Học viện Công nghệ Bưu chính Viễn thông.
+
+
+Quy trình nhập học
+1. Chọn chương trình
+2. Kiểm tra điều kiện
+3. Chuẩn bị hồ sơ
+4. Nộp hồ sơ
+
