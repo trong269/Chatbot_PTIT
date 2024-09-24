@@ -1,0 +1,401 @@
+Tiêu đề: Ngành Quản trị kinh doanh – PTIT – Đào tạo
+
+Mã ngành: 7340101
+Thời gian: 4 năm
+Kỳ nhập học: Mùa thu
+Cơ sở: Hà Nội và Tp Hồ Chí Minh
+
+
+Tổng quan
+Ngành Quản trị kinh doanh (gồm có 3 chuyên ngành Quản trị Marketing, Thương mại điện tử, Quản trị doanh nghiệp, không xét tuyển theo chuyên ngành, khi vào học sinh viên tự chọn chuyên ngành)
+1. Mã ngành: 7340101
+2. Khối lượng chương trình: 130 tín chỉ (không bao gồm Giáo dục thể chất, Giáo dục quốc phòng và Kỹ năng mềm)
+3. Chi tiêu
+- Năm 2023:
+- Năm 2022: 190
+- Năm 2021: 175
+4. Điểm trúng tuyển:
+- Năm 2022: 25,55
+- Năm 2021: 25,9
+5. Tổ hợp xét tuyển: Toán – Lý – Hóa (A00) hoặc Toán – Lý – Anh (A01) hoặc Toán - Văn - Anh (D01)
+
+
+
+Chuẩn đầu ra
+1.1. Kiến thức 
+Kiến thức chung gồm:
+(1) Hiểu và vận dụng được kiến thức đại cương về khoa học tự nhiên, khoa học kỹ thuật và công nghệ vào học tập, nghiên cứu và thực hiện hoạt động nghề nghiệp;
+(2) Hiểu và vận dụng được kiến thức đại cương về khoa học xã hội và khoa học nhân văn vào học tập, nghiên cứu và thực hiện hoạt động nghề nghiệp;
+(3) Phân tích và đánh giá được các kiến thức thuộc lĩnh vực kinh tế và quản lý phù hợp với ngành vào thực tiễn (nguyên tắc cơ bản của kinh tế vi mô và vĩ mô, nguyên lý vận động của thị trường, ứng dụng phương pháp định lượng vào hỗ trợ ra quyết định quản trị kinh doanh…);
+(4) Phân tích và đánh giá được các kiến thức thuộc lĩnh vực nhóm ngành quản trị kinh doanh để giải quyết các vấn đề chuyên môn trong thực tiễn (vận dụng các kiến thức quản trị căn bản để đề xuất các quyết định vận hành doanh nghiệp, đảm bảo nguồn nhân lực của doanh nghiệp ổn định và phát triển theo nhu cầu, triển khai các hoạt động marketing phù hợp với thị trường, phân tích tình hình tài chính và các nguồn huy động vốn, thực hiện các hoạt động quản trị tài chính căn bản trong doanh nghiệp, tổng hợp các yếu tố thuộc môi trường để xác định chiến lược kinh doanh của doanh nghiệp);
+(5) Phân tích và đánh giá được cơ chế vận hành của một doanh nghiệp trong thực tế (sơ đồ hóa mô hình tổ chức và các chức năng kinh doanh của doanh nghiệp, phân tích và đánh giá các thành tố của mô hình kinh doanh, xây dựng và triển khai các dự án/kế hoạch kinh doanh).
+Kiến thức theo chuyên ngành gồm:
+(6.a) Chuyên ngành Quản trị doanh nghiệp
+(6.a.1) Phân tích và đánh giá được quy trình, phương pháp chung vận hành hoạt động kinh doanh của doanh nghiệp;
+(6.a.2) Hiểu và vận dụng được những kiến thức về đổi mới sáng tạo, phân tích được cơ chế tạo ra hoặc ứng dụng thành tựu, giải pháp kỹ thuật, công nghệ, giải pháp quản lý để nâng cao hiệu quả và hiệu suất hoạt động của doanh nghiệp;
+(6.a.3) Hiểu và vận dụng được các nội dung về hoạch định, tổ chức và kiểm soát hoạt động marketing của doanh nghiệp, tổng hợp và đánh giá được các quyết định phân đoạn thị trường, lựa chọn thị trường mục tiêu, định vị thị trường và sử dụng các công cụ marketing nhằm tác động vào thị trường;
+(6.a.4) Sáng tạo được kế hoạch khởi sự kinh doanh, kế hoạch tái cấu trúc doanh nghiệp;
+(6.a.5) Hiểu và vận dụng được hoạt động kinh doanh quốc tế.
+(6.b) Chuyên ngành Thương mại điện tử (TMĐT)
+(6.b.1) Phân tích và đánh giá được quy trình và phương pháp chung vận hành hoạt động kinh doanh của một doanh nghiệp;
+(6.b.2) Hiểu và vận dụng được những khía cạnh pháp luật về TMĐT và An toàn thông tin trong hoạt động kinh doanh của doanh nghiệp;
+(6.b.3) Phân tích và đánh giá được hệ thống TMĐT, sáng tạo được phương án phát triển hệ thống TMĐT của doanh nghiệp;
+(6.b.4) Phân tích và đánh giá được hoạt động bán lẻ trực tuyến thông qua website của doanh nghiệp, qua các sàn TMĐT hoặc qua các nền tảng mạng xã hội khác nhau;
+(6.b.5) Phân tích và đánh giá được hệ thống giao dịch và thanh toán điện tử với khách hàng và các nhà cung cấp;
+(6.b.6) Hiểu và vận dụng được mạng máy tính, các phần mềm phổ biến về quản trị doanh nghiệp và các phần mềm tác nghiệp TMĐT thông dụng;
+(6.c) Chuyên ngành Logistics 
+(6.c.1) Phân tích và đánh giá được quy trình, phương pháp chung vận hành hoạt động kinh doanh của doanh nghiệp;
+(6.c.2)  Hiểu rõ các lý thuyết về logistics và quản trị chuỗi cung ứng; nắm bắt được xu hướng phát triển logistics, Phân tích được các nhân tố tác động đến các quyết định liên quan đến tổ chức, triển khai các quyết định quản trị logistics và quản lý chuỗi cung ứng ở các tổ chức / doanh nghiệp;
+(6.c.3) Hiểu và vận dụng được các kiến thức về giao nhận, vận chuyển hàng hóa, các trung tâm phân phối và vận tải đa phương thức và thanh toán quốc tế;
+(6.c.4) Hiểu và vận dụng các kiến thức để xây dựng kế hoạch, xác định và quản lý dự trữ sản xuất và dự trữ bán hàng của doanh nghiệp;
+(6.c.5)  Hiểu và vận dụng các kiến thức về hoạt động mua hàng, quản lý khách hàng quản lý nguồn cung ứng hàng ở các doanh nghiệp/tổ chức;
+(6.c.6) Hiểu và vận dụng các kiến thức để phát triển hệ thống logistics và chuỗi cung ứng trong các loại hình doanh nghiệp.
+(6.d) Chuyên ngành Quản trị Marketing
+(6.d.1) Hiểu và vận dụng được các kiến thức để hoạch định, tổ chức và kiểm soát các hoạt động marketing như phân đoạn thị trường, lựa chọn thị trường mục tiêu, định vị thị trường và triển khai các công cụ marketing nhằm tác động vào thị trường;
+(6.d.2) Hiểu và vận dụng được các hoạt động marketing trong thị trường công nghiệp/thị trường tổ chức (B2B marketing);
+(6.d.3) Hiểu và vận dụng được chương trình nghiên cứu marketing nhằm mục đích hiểu về nhu cầu khách hàng, thị trường hoặc đo lường phản ứng thị trường trước các tác lực marketing của doanh nghiệp;
+(6.d.4) Hiểu và vận dụng được các hoạt động truyền thông marketing của doanh nghiệp;
+(6.d.5) Hiểu và vận dụng được các công cụ marketing điện tử, sáng tạo được kế hoạch marketing điện tử cho một sản phẩm và thị trường cụ thể.
+1.2. Kỹ năng 
+Các kỹ năng chuyên môn ngành Quản trị kinh doanh bao gồm:
+(7) Có kỹ năng nhận thức và giải quyết vấn đề chuyên môn tổng hợp trong lĩnh vực quản trị kinh doanh (tư duy hệ thống, giải quyết vấn đề, xác lập mục tiêu khả thi và ra quyết định trong quản trị kinh doanh);
+(8) Có năng lực thực hành nghề nghiệp trong lĩnh vực quản trị kinh doanh (Thực hiện các chức năng hoạch định, tổ chức, lãnh đạo, kiểm soát hoạt động kinh doanh; Xử lý những tình huống phát sinh ở cấp độ quản trị viên cấp cơ sở; Thu thập, phân tích, xử lý thông tin một cách chính xác theo các phương pháp định tính, định lượng).
+Kỹ năng chuyên sâu theo chuyên ngành bao gồm:
+(9.a) Chuyên ngành Quản trị doanh nghiệp: Có năng lực thực hành nghề nghiệp trong lĩnh vực quản trị kinh doanh, cụ thể như: vận hành hệ thống kinh doanh của doanh nghiệp, đề xuất cơ chế cho hoạt động đổi mới sáng tạo; lập kế hoạch marketing, triển khai một phần các hoạt động marketing tại doanh nghiệp; xây dựng kế hoạch kinh doanh, kế hoạch khởi sự kinh doanh và kế hoạch tái cấu trúc doanh nghiệp;
+(9.b) Chuyên ngành Thương mại điện tử: Có năng lực thực hành nghề nghiệp trong lĩnh vực TMĐT, cụ thể như: vận hành hệ thống kinh doanh điện tử; vận dụng pháp luật về TMĐT và an toàn thông tin trong kinh doanh; lập bản yêu cầu hệ thống TMĐT, lập kế hoạch phát triển hệ thống TMĐT; quản lý dự án ứng dụng TMĐT; vận hành hệ thống bán lẻ trực tuyến trên website của doanh nghiệp, trên sàn TMĐT và trên các nền tảng mạng xã hội phổ biến; xây dựng hệ thống giao dịch và thanh toán điện tử; sử dụng mạng máy tính, sử dụng phần mềm quản trị doanh nghiệp và phần mềm tác nghiệp TMĐT thông dụng;
+(9.c) Chuyên ngành Quản trị Logistics: Có năng lực thực hành nghề nghiệp trong lĩnh vực logistics như: phân tích và đánh các kế hoạch sản xuất kinh doanh của doanh nghiệp; vận hành đại lý giao nhận và khai báo thủ tục hải quan; thực hiện nghiệp vụ xuất nhập khẩu và thanh toán quốc tế; quản trị chuỗi cung ứng; vận tải đa phương thức; quản trị kho hàng và tồn kho; quản trị hệ thống thông tin logistics; khởi nghiệp và thiết kế mô hình logistics, chuỗi cung ứng; xây dựng kế hoạch sản xuất kinh doanh; điều hành và quản trị doanh nghiệp trong lĩnh vực quản trị logistics và chuỗi cung ứng.
+(9.d) Chuyên ngành Quản trị Marketing: Có năng lực thực hành nghề nghiệp trong lĩnh vực marketing, cụ thể như: nghiên cứu thị trường, xây dựng chiến lược và chương trình marketing, triển khai các quyết định về sản phẩm, giá, phân phối và xúc tiến hỗn hợp.
+1.3. Kỹ năng mềm
+(10) Có kỹ năng giao tiếp và thuyết trình tốt thể hiện qua việc trình bày rõ ràng, tự tin và thuyết phục các vấn đề liên quan đến chuyên môn và các vấn đề kinh tế xã hội;
+(11) Có kỹ năng làm việc nhóm, biết thành lập và tổ chức tốt công việc theo nhóm;
+(12) Có các kỹ năng cá nhân và phẩm chất nghề nghiệp trong việc giải quyết vấn đề, tư duy sáng tạo, lập kế hoạch và tổ chức công việc;
+(13) Có phương pháp làm việc khoa học và chuyên nghiệp, tư duy hệ thống và tư duy phân tích và làm việc hiệu quả trong nhóm (đa ngành), hội nhập được trong môi trường quốc tế.
+1.4. Năng lực tự chủ và trách nhiệm
+(14) Có ý thức nghề nghiệp, trách nhiệm công dân, chủ động sáng tạo, có ý thức và năng lực hợp tác trong công việc;
+(15) Có khả năng tự định hướng, thích nghi với các môi trường làm việc khác nhau; tự học tập, tích lũy kiến thức, kinh nghiệm để nâng cao trình độ chuyên môn nghiệp vụ;
+(16) Có sáng kiến trong quá trình thực hiện nhiệm vụ được giao; có khả năng đưa ra được kết luận về các vấn đề nghiệp vụ, chuyên môn;
+(17) Có năng lực lập kế hoạch, điều phối, phát huy trí tuệ tập thể và đánh giá, cải tiến các hoạt động chuyên môn.
+1.5. Hành vi đạo đức 
+(18) Có phẩm chất đạo đức tốt, tính kỷ luật cao, biết làm việc tập thể theo nhóm, theo dự án, say mê khoa học và luôn tự rèn luyện nâng cao phẩm chất chính trị và năng lực chuyên môn;
+(19) Hiểu biết về các giá trị đạo đức và nghề nghiệp, ý thức về những vấn đề đương đại, hiểu rõ vai trò của các giải pháp kinh tế - kỹ thuật trong bối cảnh kinh tế, môi trường, xã hội toàn cầu và trong bối cảnh riêng của đất nước;
+(20) Ý thức được sự cần thiết phải thường xuyên học tập nâng cao trình độ, có năng lực chuyên môn và khả năng ngoại ngữ để tự học suốt đời.
+1.6. Ngoại ngữ (Tiếng Anh)
+(21) Đạt trình độ tiếng Anh 450 điểm TOEIC quốc tế hoặc tương đương;
+(22) Có khả năng sử dụng tiếng Anh phục vụ học tập, nghiên cứu, hoà nhập nhanh với khu vực và quốc tế sau khi ra trường;
+(23) Có khả năng sử dụng tiếng Anh tốt trong các hoạt động liên quan đến nghề nghiệp được đào tạo.
+1.7. Vị trí việc làm sau khi tốt nghiệp
+Sau khi tốt nghiệp sinh viên có đủ năng lực để có thể đảm nhận các vị trí công việc sau:
+
+Giám đốc doanh nghiệp nhỏ và vừa; Giám đốc chức năng trong các doanh nghiệp (giám đốc Nhân sự, giám đốc Marketing, giám đốc Kinh doanh Thương mại / Thương mại điện tử, giám đốc Vận hành... tương ứng với chuyên ngành được đào tạo);
+Nhân viên hoặc quản trị cấp trung, quản trị cấp cơ sở trong các phòng / ban Nhân sự, Marketing, Kinh doanh Thương mại / Thương mại điện tử, Sản xuất;
+Công chức, viên chức tại các cơ quan quản lý nhà nước;
+Nhà sáng lập doanh nghiệp;
+
+Có thể tiếp tục học tiếp lên trình độ sau đại học ngành Kinh doanh và quản lý tại các cơ sở giáo dục đại học trong nước và nước ngoài.
+
+Chuyên ngành Quản trị Marketing
+Học kỳ 1
+Triết học Mác-Lênin: 3 tín chỉ
+Tâm lý quản lý: 2 tín chỉ
+Tin học cơ sở 1: 2 tín chỉ
+Toán cao cấp 1: 2 tín chỉ
+Pháp luật đại cương: 2 tín chỉ
+
+Học kỳ 2
+Kinh tế chính trị Mác-Lênin: 2 tín chỉ
+Tiếng Anh (Course 1): 4 tín chỉ
+Toán cao cấp 2: 2 tín chỉ
+Lý thuyết xác suất và thống kê: 3 tín chỉ
+Tin học cơ sở 3: 2 tín chỉ
+Kinh tế vi mô 1: 3 tín chỉ
+
+Học kỳ 3
+Chủ nghĩa xã hội khoa học: 2 tín chỉ
+Tiếng Anh (Course 2): 4 tín chỉ
+Toán kinh tế: 3 tín chỉ
+Kinh tế vĩ mô 1: 3 tín chỉ
+Marketing căn bản: 3 tín chỉ
+Quản trị học: 3 tín chỉ
+
+Học kỳ 4
+Lịch sử Đảng cộng sản Việt Nam: 2 tín chỉ
+Tiếng Anh (Course 3): 4 tín chỉ
+Nguyên lý kế toán: 3 tín chỉ
+Tài chính tiền tệ: 3 tín chỉ
+Giao tiếp trong kinh doanh: 2 tín chỉ
+Thương mại điện tử căn bản: 3 tín chỉ
+Kinh tế lượng: 3 tín chỉ
+
+Học kỳ 5
+Tư tương Hồ Chí Minh: 2 tín chỉ
+Tiếng Anh (Course 3 Plus): 2 tín chỉ
+Quản trị sản xuất: 3 tín chỉ
+Thống kê doanh nghiệp: 3 tín chỉ
+Logicstics căn bản: 2 tín chỉ
+Hệ thống thông tin quản lý: 2 tín chỉ
+Quản trị chiến lược: 3 tín chỉ
+
+Học kỳ 6
+Quản trị tài chính doanh nghiệp: 3 tín chỉ
+Kế toán quản trị: 3 tín chỉ
+Luật kinh doanh: 2 tín chỉ
+Quản trị bán hàng và phân phối sản phẩm: 2 tín chỉ
+Quản trị nhân lực: 3 tín chỉ
+Phân tích hoạt động sản xuất kinh doanh: 2 tín chỉ
+2 học phần tự chọn: 4 tín chỉ
+Đàm phán kinh doanh: 2 tín chỉ
+Đạo đức kinh doanh và văn hóa doanh nghiệp: 2 tín chỉ
+Quản trị văn phòng: 2 tín chỉ
+Quản trị công nghệ: 2 tín chỉ
+Quản trị dự án: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Quản trị rủi ro: 2 tín chỉ
+hính phủ điện tử: 2 tín chỉ
+Thương mại di động: 2 tín chỉ
+Quản trị chất lượng: 2 tín chỉ
+Truyền thông thương hiệu trong môi trường trực tuyến: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+
+Học kỳ 7
+Phương pháp luận NCKH: 2 tín chỉ
+Quản trị marketing: 2 tín chỉ
+Marketing công nghiệp: 2 tín chỉ
+Nghiên cứu Marketing: 2 tín chỉ
+Truyền thông Marketing tích hợp: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Chuyên đề Quản trị Marketing: 2 tín chỉ
+2 học phần tự chọn: 4 tín chỉ
+Đàm phán kinh doanh: 2 tín chỉ
+Đạo đức kinh doanh và văn hóa doanh nghiệp: 2 tín chỉ
+Quản trị văn phòng: 2 tín chỉ
+Quản trị công nghệ: 2 tín chỉ
+Quản trị dự án: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Quản trị rủi ro: 2 tín chỉ
+hính phủ điện tử: 2 tín chỉ
+Thương mại di động: 2 tín chỉ
+Quản trị chất lượng: 2 tín chỉ
+Truyền thông thương hiệu trong môi trường trực tuyến: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+
+Học kỳ 8
+Thực tập và tốt nghiệp (hoặc các học phần thay thế tốt nghiệp): 10 tín chỉ
+
+Chuyên ngành Thương mại điện tử
+Học kỳ 1
+Triết học Mác-Lênin: 3 tín chỉ
+Tâm lý quản lý: 2 tín chỉ
+Tin học cơ sở 1: 2 tín chỉ
+Toán cao cấp 1: 2 tín chỉ
+Pháp luật đại cương: 2 tín chỉ
+
+Học kỳ 2
+Kinh tế chính trị Mác-Lênin: 2 tín chỉ
+Tiếng Anh (Course 1): 4 tín chỉ
+Toán cao cấp 2: 2 tín chỉ
+Lý thuyết xác suất và thống kê: 3 tín chỉ
+Tin học cơ sở 3: 2 tín chỉ
+Kinh tế vi mô 1: 3 tín chỉ
+
+Học kỳ 3
+Chủ nghĩa xã hội khoa học: 2 tín chỉ
+Tiếng Anh (Course 2): 4 tín chỉ
+Toán kinh tế: 3 tín chỉ
+Kinh tế vĩ mô 1: 3 tín chỉ
+Marketing căn bản: 3 tín chỉ
+Quản trị học: 3 tín chỉ
+
+Học kỳ 4
+Lịch sử Đảng cộng sản Việt Nam: 2 tín chỉ
+Tiếng Anh (Course 3): 4 tín chỉ
+Nguyên lý kế toán: 3 tín chỉ
+Tài chính tiền tệ: 3 tín chỉ
+Giao tiếp trong kinh doanh: 2 tín chỉ
+Thương mại điện tử căn bản: 3 tín chỉ
+Kinh tế lượng: 3 tín chỉ
+
+Học kỳ 5
+Tư tương Hồ Chí Minh: 2 tín chỉ
+Tiếng Anh (Course 3 Plus): 2 tín chỉ
+Quản trị sản xuất: 3 tín chỉ
+Thống kê doanh nghiệp: 3 tín chỉ
+Logicstics căn bản: 2 tín chỉ
+Hệ thống thông tin quản lý: 2 tín chỉ
+Quản trị chiến lược: 3 tín chỉ
+
+Học kỳ 6
+Quản trị tài chính doanh nghiệp: 3 tín chỉ
+Kế toán quản trị: 3 tín chỉ
+Luật kinh doanh: 2 tín chỉ
+Quản trị bán hàng và phân phối sản phẩm: 2 tín chỉ
+Quản trị nhân lực: 3 tín chỉ
+Phân tích hoạt động sản xuất kinh doanh: 2 tín chỉ
+2 học phần tự chọn: 4 tín chỉ
+Đàm phán kinh doanh: 2 tín chỉ
+Đạo đức kinh doanh và văn hóa doanh nghiệp: 2 tín chỉ
+Quản trị văn phòng: 2 tín chỉ
+Quản trị công nghệ: 2 tín chỉ
+Quản trị dự án: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Quản trị rủi ro: 2 tín chỉ
+hính phủ điện tử: 2 tín chỉ
+Thương mại di động: 2 tín chỉ
+Quản trị chất lượng: 2 tín chỉ
+Truyền thông thương hiệu trong môi trường trực tuyến: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+
+Học kỳ 7
+Phương pháp luận NCKH: 2 tín chỉ
+Pháp luật thương mại điện tử và ATTT: 2 tín chỉ
+Xây dựng website thương mại điện tử: 2 tín chỉ
+Quản trị doanh nghiệp: 3 tín chỉ
+Thanh toán điện tử: 2 tín chỉ
+Bán lẻ trực tuyến: 2 tín chỉ
+2 học phần tự chọn: 4 tín chỉ
+Đàm phán kinh doanh: 2 tín chỉ
+Đạo đức kinh doanh và văn hóa doanh nghiệp: 2 tín chỉ
+Quản trị văn phòng: 2 tín chỉ
+Quản trị công nghệ: 2 tín chỉ
+Quản trị dự án: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Quản trị rủi ro: 2 tín chỉ
+hính phủ điện tử: 2 tín chỉ
+Thương mại di động: 2 tín chỉ
+Quản trị chất lượng: 2 tín chỉ
+Truyền thông thương hiệu trong môi trường trực tuyến: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+
+Học kỳ 8
+Thực tập và tốt nghiệp (hoặc các học phần thay thế tốt nghiệp): 10 tín chỉ
+
+Chuyên ngành Quản trị doanh nghiệp
+Học kỳ 1
+Triết học Mác-Lênin: 3 tín chỉ
+Tâm lý quản lý: 2 tín chỉ
+Tin học cơ sở 1: 2 tín chỉ
+Toán cao cấp 1: 2 tín chỉ
+Pháp luật đại cương: 2 tín chỉ
+
+Học kỳ 2
+Kinh tế chính trị Mác-Lênin: 2 tín chỉ
+Tiếng Anh (Course 1): 4 tín chỉ
+Toán cao cấp 2: 2 tín chỉ
+Lý thuyết xác suất và thống kê: 3 tín chỉ
+Tin học cơ sở 3: 2 tín chỉ
+Kinh tế vi mô 1: 3 tín chỉ
+
+Học kỳ 3
+Chủ nghĩa xã hội khoa học: 2 tín chỉ
+Tiếng Anh (Course 2): 4 tín chỉ
+Toán kinh tế: 3 tín chỉ
+Kinh tế vĩ mô 1: 3 tín chỉ
+Marketing căn bản: 3 tín chỉ
+Quản trị học: 3 tín chỉ
+
+Học kỳ 4
+Lịch sử Đảng cộng sản Việt Nam: 2 tín chỉ
+Tiếng Anh (Course 3): 4 tín chỉ
+Nguyên lý kế toán: 3 tín chỉ
+Tài chính tiền tệ: 3 tín chỉ
+Giao tiếp trong kinh doanh: 2 tín chỉ
+Thương mại điện tử căn bản: 3 tín chỉ
+Kinh tế lượng: 3 tín chỉ
+
+Học kỳ 5
+Tư tương Hồ Chí Minh: 2 tín chỉ
+Tiếng Anh (Course 3 Plus): 2 tín chỉ
+Quản trị sản xuất: 3 tín chỉ
+Thống kê doanh nghiệp: 3 tín chỉ
+Logicstics căn bản: 2 tín chỉ
+Hệ thống thông tin quản lý: 2 tín chỉ
+Quản trị chiến lược: 3 tín chỉ
+
+Học kỳ 6
+Quản trị tài chính doanh nghiệp: 3 tín chỉ
+Kế toán quản trị: 3 tín chỉ
+Luật kinh doanh: 2 tín chỉ
+Quản trị bán hàng và phân phối sản phẩm: 2 tín chỉ
+Quản trị nhân lực: 3 tín chỉ
+Phân tích hoạt động sản xuất kinh doanh: 2 tín chỉ
+2 học phần tự chọn: 4 tín chỉ
+Đàm phán kinh doanh: 2 tín chỉ
+Đạo đức kinh doanh và văn hóa doanh nghiệp: 2 tín chỉ
+Quản trị văn phòng: 2 tín chỉ
+Quản trị công nghệ: 2 tín chỉ
+Quản trị dự án: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Quản trị rủi ro: 2 tín chỉ
+hính phủ điện tử: 2 tín chỉ
+Thương mại di động: 2 tín chỉ
+Quản trị chất lượng: 2 tín chỉ
+Truyền thông thương hiệu trong môi trường trực tuyến: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+
+Học kỳ 7
+Phương pháp luận NCKH: 2 tín chỉ
+Quản trị marketing: 2 tín chỉ
+Khởi sự kinh doanh: 2 tín chỉ
+Quản trị doanh nghiệp: 3 tín chỉ
+Kinh doanh quốc tế: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+2 học phần tự chọn: 4 tín chỉ
+Đàm phán kinh doanh: 2 tín chỉ
+Đạo đức kinh doanh và văn hóa doanh nghiệp: 2 tín chỉ
+Quản trị văn phòng: 2 tín chỉ
+Quản trị công nghệ: 2 tín chỉ
+Quản trị dự án: 2 tín chỉ
+E-Marketing: 2 tín chỉ
+Quản trị rủi ro: 2 tín chỉ
+hính phủ điện tử: 2 tín chỉ
+Thương mại di động: 2 tín chỉ
+Quản trị chất lượng: 2 tín chỉ
+Truyền thông thương hiệu trong môi trường trực tuyến: 2 tín chỉ
+Quản trị đổi mới sáng tạo: 2 tín chỉ
+
+Học kỳ 8
+Thực tập và tốt nghiệp (hoặc các học phần thay thế tốt nghiệp): 10 tín chỉ
+
+
+
+
+Nghề nghiệp
+Sinh viên có thể làm việc tại các vị trí cụ thể như sau:
+- Các Cục, Vụ: Cục Quản lý phát thanh, truyền hình và thông tin điện tử, Cục Viễn thông, Cục Quản lý thị trường, Cục Quản lý cạnh tranh; Vụ thị trường trong nước, Vụ Chính sách thương mại đa biên …;
+- Các Viện, Trung tâm: Viện Nghiên cứu quản lý kinh tế trung ương, Viện Nghiên cứu chiến lược chính sách công nghiệp, Viện Chiến lược thông tin và truyền thông, Viện Chiến lược và chính sách khoa học và công nghệ, Trung tâm Tư vấn quản lý đào tạo …;
+- Các doanh nghiệp, công ty, Tổng công ty hoạt động sản xuất kinh doanh trên địa bàn toàn quốc; sinh viên tốt nghiệp ngành này sẽ có ư thế khi làm việc tại các doanh nghiệp hoạt động trong những lĩnh vực có liên quan tới bưu chính, viễn thông: Tập đoàn Bưu chính viễn thông Việt Nam (VNPT), Tổng công ty Viễn thông toàn cầu (GTEL), Tập đoàn Viễn thông quân đội (VIETEL) …;
+- Các phòng chức năng: Kế hoạch tổng hợp quản lý xuất nhập khẩu, Quản lý xuất nhập khẩu, Quản lý thương mại, Quản lý trong công nghệ thông tin và truyền thông… tại các Sở: Sở Kế hoạch và đầu tư, Sở thông tin và truyền thông, Sở Khoa học và công nghệ… của 63 tỉnh, thành phố trong toàn quốc;
+
+
+
+Học phí
+- Học phí sẽ được thanh toán theo từng học kỳ, dựa trên số tín chỉ mà sinh viên đăng ký trong học kỳ. Thời gian đóng học phí là 1 tháng kể từ khi có thông báo của nhà trường. Sinh viên sẽ thực hiện đóng học phí theo quy định mà Học viện ban hành; - Học phí theo tín chỉ năm 2022: 615.000 đ/tín chỉ. Ghi chú: - Thời gian hoàn thành chương trình sẽ phụ thuộc vào số lượng môn học sinh viên lựa chọn học trong một học kỳ. - Lộ trình tăng học phí tối đa cho từng năm: Mức học phí được điều chỉnh theo lộ trình phù hợp tương xứng với chất lượng đào tạo và đảm bảo tỷ lệ tăng không quá 15%/năm (theo Nghị định 81/2021/NĐ-CP của Chính phủ).
+
+
+
+Điều kiện tuyển sinh
+1. Đối tượng tuyển sinh:
+a) Quy định chung:
+– Thí sinh đã tốt nghiệp chương trình THPT của Việt Nam (theo hình thức giáo dục chính quy hoặc giáo dục thường xuyên) hoặc đã tốt nghiệp trình độ trung cấp (trong đó, người tốt nghiệp trình độ trung cấp nhưng chưa có bằng tốt nghiệp THPT phải học và thi đạt yêu cầu đủ khối lượng kiến thức văn hóa THPT theo quy định của Luật Giáo dục và các văn bản hướng dẫn thi hành) hoặc đã tốt nghiệp chương trình THPT của nước ngoài (đã được nước sở tại cho phép thực hiện, đạt trình độ tương đương trình độ THPT của Việt Nam) ở nước ngoài hoặc ở Việt Nam (sau đây gọi chung là tốt nghiệp THPT);
+– Có đủ sức khỏe để học tập theo quy định hiện hành;
+– Không bị vi phạm pháp luật; không trong thời gian bị truy cứu trách nhiệm hình sự.
+b) Đối với phương thức xét tuyển dựa vào kết quả thi THPT năm 2020:
+Ngoài các yêu cầu theo quy định chung ở mục a) thì thí sinh phải tham dự kỳ thi tốt nghiệp THPT năm 2020 với các bài thi/môn thi theo tổ hợp bài thi/môn thi tương ứng các ngành của Học viện.
+c) Đối với phương thức xét tuyển kết hợp thì ngoài các yêu cầu theo quy định chung ở mục a thì thí sinh cần có thêm một trong các điều kiện sau đây:
+– Thí sinh có Chứng chỉ quốc tế SAT từ 1130/1600 trở lên hoặc ACT từ 25/36 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11 và học kỳ 1 lớp 12 đạt từ 8,0 trở lên và có hạnh kiểm Khá trở lên;
+– Thí sinh có Chứng chỉ tiếng Anh quốc tế trong thời hạn (tính đến ngày xét tuyển) đạt IELTS 5.5 trở lên hoặc TOEFL iBT 65 trở lên hoặc TOEFL ITP 513 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11 và học kỳ 1 lớp 12 đạt từ 8,0 trở lên và có hạnh kiểm Khá trở lên;
+– Thí sinh đạt giải Khuyến khích trong kỳ thi chọn học sinh giỏi quốc gia hoặc đã tham gia kỳ thi chọn học sinh giỏi quốc gia hoặc đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi cấp Tỉnh, Thành phố trực thuộc Trung ương (TW) các môn Toán, Lý, Hóa, Tin học, Tiếng Anh và có kết quả điểm chung bình chung học tập lớp 10, 11 và học kỳ 1 lớp 12 đạt từ 8,0 trở lên và có hạnh kiểm Khá trở lên.
+2. Phạm vi tuyển sinh: 
+Học viện tuyển sinh trên phạm vi cả nước, thí sinh đăng ký xét tuyển vào Cơ sở đào tạo (BVH hoặc BVS) nào thì sẽ theo học tại Cơ sở đó.
+3. Phương thức tuyển sinh:
+Năm 2020, Học viện Công nghệ Bưu chính Viễn thông sử dụng 03 phương thức tuyển sinh như sau:
+a) Tuyển thẳng và ưu tiên xét tuyển: Học viện xét tuyển thẳng và ưu tiên xét tuyển theo Quy chế tuyển sinh hiện hành của Bộ Giáo dục và Đào tạo (có thông báo chi tiết riêng);
+b) Xét tuyển dựa vào kết quả điểm thi tốt nghiệp THPT năm 2020;
+c) Xét tuyển kết hợp giữa kết quả học tập ở bậc THPT với một trong các loại Chứng chỉ quốc tế hoặc Thành tích cá nhân trong các kỳ thi tuyển chọn học sinh giỏi như đã nêu trong điểm c) mục 1. về Đối tượng tuyển sinh ở trên (chi tiết sẽ có trong thông báo tuyển sinh).
+
+
+Quy trình nhập học
+1. Chọn chương trình
+2. Kiểm tra điều kiện
+3. Chuẩn bị hồ sơ
+4. Nộp hồ sơ
+
