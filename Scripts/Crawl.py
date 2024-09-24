@@ -323,7 +323,6 @@ def crawl_hoi_dong_giao_su_co_so():
     else:
         print(f'Lỗi: Không thể truy cập trang. Mã trạng thái: {response.status_code}')
 
-
 def crawl_nguon_nhan_luc():
     url = 'https://ptit.edu.vn/gioi-thieu/nguon-nhan-luc'
     # Gui y/c den trang web
@@ -363,7 +362,67 @@ def crawl_co_so_vat_chat():
     else:
         print(f'Loi: Khong the truy cap trang. Ma trang thai:{response.status_code}')
 
+def crawl_chtrinh_cntt_dinh_huong_ung_dung():
+    url = 'https://daotao.ptit.edu.vn/chuong-trinh-dao-tao/chuong-trinh-cong-nghe-thong-tin-dinh-huong-ung-dung/'
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        title = soup.title.string
+        
+        body1 = soup.find('ul', class_='column_4 mtop')
+        labels = body1.find_all('label')
+        strongs = body1.find_all('strong')
+        content_pairs = [f"{label.get_text()}: {strong.get_text()}" for label, strong in zip(labels, strongs)]
+        content1 = "\n".join(content_pairs)
 
+        body2 = soup.find('div', class_='ova_dir_content')
+        content2 = body2.find_all(['section'])
+        content1 += content2[0].get_text()
+        content1 += content2[1].get_text()
+        content1 += "\n"
+        
+        li_list = content2[2].find('ul', class_='nav-tab').find_all('li')
+        content1 += li_list[0].get_text().strip()
+        content1 += "\n"
+        for  i in range(0, 8):
+            hoc_ky = content2[2].find('div', id=f"tab-0-{i}")
+            label = hoc_ky.find('label')
+            content1 += label.get_text()
+            content1 += "\n"
+            so_tin = hoc_ky.find_all('div', class_='tag')
+            mon_hoc = hoc_ky.find_all('div', class_='title')
+            pairs = [f"{mon.get_text().strip()}: {tin.get_text().strip()}" for mon, tin in zip(mon_hoc, so_tin)]
+            content_pair = "\n".join(pairs)
+            content1 += content_pair
+            content1 += "\n\n"
+        content1 += li_list[1].get_text().strip()
+        content1 += "\n"
+        for  i in range(0, 8):
+            hoc_ky = content2[2].find('div', id=f"tab-1-{i}")
+            label = hoc_ky.find('label')
+            content1 += label.get_text()
+            content1 += "\n"
+            so_tin = hoc_ky.find_all('div', class_='tag')
+            mon_hoc = hoc_ky.find_all('div', class_='title')
+            pairs = [f"{mon.get_text().strip()}: {tin.get_text().strip()}" for mon, tin in zip(mon_hoc, so_tin)]
+            content_pair = "\n".join(pairs)
+            content1 += content_pair
+            content1 += "\n\n" 
+
+        content1 += content2[3].get_text()
+        content1 += content2[4].get_text()
+        content1 += content2[5].get_text()
+        
+        this_labels = content2[6].find_all(['h3', 'label'])
+        content1 += "\n"
+        content1 += "\n".join(p.get_text() for p in this_labels)
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'chtrinh_cntt_dinh_huong_ung_dung.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title}\n\n')
+            f.write(content1)
+    else:
+        print(f'Loi khong the truy cap trang. Ma trang thai: {response.status_code}')
 
 if __name__ == '__main__':
     # crawl_lich_su_truyen_thong()
@@ -376,6 +435,6 @@ if __name__ == '__main__':
     # crawl_ban_giam_doc_hoc_vien()
     # crawl_hoi_dong_khoa_hoc_va_dao_tao()
     # crawl_hoi_dong_giao_su_co_so()
-
-    crawl_nguon_nhan_luc()
-    crawl_co_so_vat_chat()
+    # crawl_nguon_nhan_luc()
+    # crawl_co_so_vat_chat()
+    crawl_chtrinh_cntt_dinh_huong_ung_dung()
