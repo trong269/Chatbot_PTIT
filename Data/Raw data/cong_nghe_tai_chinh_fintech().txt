@@ -1,201 +1,46 @@
-Tiêu đề: Ngành Công nghệ tài chính – Fintech – PTIT – Đào tạo
+Tiêu đề: Ngành Công nghệ tài chính Fintech PTIT Đào tạo
 
-Mã ngành: 7340205
-Thời gian: 4 năm
-Kỳ nhập học: Mùa thu
-Cơ sở: Hà Nội và Tp Hồ Chí Minh
+Ngành Công nghệ tài chính Fintech Mã ngành: 7340205
 
+Ngành Công nghệ tài chính Fintech Thời gian: 4 năm
 
-Tổng quan
-Chương trình đào tạo ngành Công nghệ tài chính (Fintech) của Học viện Công nghệ Bưu chính Viễn thông được thiết kế để đào tạo và cung ứng nguồn nhân lực trình độ cử nhân ngành Công nghệ tài chính trong bối cảnh hội nhập quốc tế và phát triển của nền kinh tế số. Sinh viên tốt nghiệp chương trình có phẩm chất chính trị, đạo đức nghề nghiệp và sức khỏe tốt; có kiến thức nền tảng và chuyên sâu về các kiến thức liên quan đến công nghệ tài chính. Chương trình đào tạo ngành Công nghệ tài chính đảm bảo triết lý giáo dục của Học viện đó là “Trí thức - Sáng tạo - Đạo đức - Trách nhiệm” hướng tới mục tiêu đào tạo ra những con người “vừa có tài vừa có đức” để đóng góp cho sự phát triển chung của ngành, của đất nước và của nhân loại
-1. Mã ngành: 7340205
-2. Khối lượng chương trình: 132 tín chỉ (không bao gồm Giáo dục thể chất, Giáo dục quốc phòng và Kỹ năng mềm)
-3. Chỉ tiêu:
-- Năm 2023: 120
-- Năm 2022: 110
-- Năm 2021: 100
-4. Điểm trúng tuyển:
-- Năm 2023: 25,35
-- Năm 2022: 25,85
-- Năm 2021: 25,90
-3. Tổ hợp xét tuyển: Toán – Lý – Hóa (A00) hoặc Toán – Lý – Anh (A01) hoặc Toán - Văn - Anh (D01)
+Ngành Công nghệ tài chính Fintech Kỳ nhập học: Mùa thu
 
+Ngành Công nghệ tài chính Fintech Cơ sở: Hà Nội và Tp Hồ Chí Minh
 
+Tổng quan Chương trình đào tạo ngành Công nghệ tài chính (Fintech) của Học viện Công nghệ Bưu chính Viễn thông được thiết kế để đào tạo và cung ứng nguồn nhân lực trình độ cử nhân ngành Công nghệ tài chính trong bối cảnh hội nhập quốc tế và phát triển của nền kinh tế số. Sinh viên tốt nghiệp chương trình có phẩm chất chính trị, đạo đức nghề nghiệp và sức khỏe tốt; có kiến thức nền tảng và chuyên sâu về các kiến thức liên quan đến công nghệ tài chính. Chương trình đào tạo ngành Công nghệ tài chính đảm bảo triết lý giáo dục của Học viện đó là “Trí thức - Sáng tạo - Đạo đức - Trách nhiệm” hướng tới mục tiêu đào tạo ra những con người “vừa có tài vừa có đức” để đóng góp cho sự phát triển chung của ngành, của đất nước và của nhân loại.Khối lượng chương trình: 132 tín chỉ (không bao gồm Giáo dục thể chất, Giáo dục quốc phòng và Kỹ năng mềm)
 
-Chuẩn đầu ra
-1. Chuẩn về kiến thức
-[PLO1] Vận dụng các kiến thức cơ bản về khoa học xã hội, chính trị và pháp luật trong học tập, nghiên cứu và thực hiện các hoạt động nghề nghiệp liên quan đến;
-[PLO2] Vận dụng các kiến thức cơ bản và chuyên sâu về tài chính, công nghệ thông tin, công nghệ tài chính để giải quyết các vấn đề thực tiễn liên quan đến công nghệ tài chính;
-[PLO3] Lập kế hoạch hoạt động chuyên môn liên quan đến công nghệ tài chính trong các tổ chức khác nhau; tổ chức thực hiện và giám sát việc thực thi kế hoạch này;
-[PLO4] Thực thi quản lý điều hành các các dự án liên quan đến công nghệ tài chính nói chung và khởi nghiệp về công nghệ tài chính nói riêng.
-2. Chuẩn về kỹ năng
-a. Kỹ năng chuyên môn:
-[PLO5] Sử dụng các công cụ tài chính để quản lý tài chính, quản lý rủi ro tài chính, quản lý các hoạt động đầu tư, kinh doanh trong các doanh nghiệp và các tổ chức tài chính;
-[PLO6] Phân tích và quản lý dữ liệu tài chính, sử dụng các phần mềm/ứng dụng công nghệ thông tin trong hoạt động của định chế tài chính, thị trường tài chính và doanh nghiệp;
-[PLO7] Xác định và cụ thể hóa các giải pháp kỹ thuật đối với các dự án vừa và nhỏ về CNTT nói chung và công nghệ tài chính nói riêng về phát triển phần mềm, phân tích nghiệp vụ, kiểm thử và tích hợp hệ thống;
-[PLO8] Phản biện, và phân tích lựa chọn các phương án thay thế trong các quyết định liên quan đến chuyên môn; cập nhật công nghệ mới, chủ động đổi mới sáng tạo thích ứng với môi trường thay đổi.
-b. Kỹ năng mềm:
-[PLO9] Hiểu và truyền đạt vấn đề và giải pháp tới người khác tại nơi làm việc; truyền tải, phổ biến kiến thức, kỹ năng trong việc thực hiện những nhiệm vụ cụ thể hoặc phức tạp liên quan đến công nghệ tài chính;
-[PLO10] Vận dụng kiến thức đã học để dẫn dắt, khởi nghiệp nói chung và liên quan đến công nghệ tài chính nói riêng nhằm tạo việc làm cho mình và xã hội; thực thi viết báo cáo, đánh giá chất lượng công việc sau khi hoàn thành và kết quả thực hiện của các thành viên trong nhóm.
-c. Kỹ năng ngoại ngữ và tin học
-[PLO11] Đạt trình độ tiếng Anh 450 điểm TOEIC quốc tế trở lên hoặc tương đương; Có khả năng sử dụng tiếng Anh phục vụ học tập, nghiên cứu, hoà nhập nhanh với cộng đồng công nghệ tài chính khu vực và quốc tế sau khi ra trường.
-[PLO12] Sử dụng thành thạo máy vi tính, thành thạo các công nghệ lập trình cơ bản phục vụ công tác chuyên môn, phân tích số liệu, biên soạn tài liệu báo các và các công việc liên quan.
-3. Năng lực tự chủ và trách nhiệm:
-[PLO13] Có phẩm chất đạo đức, ý thức nghề nghiệp, trách nhiệm công dân, có ý thức và năng lực hợp tác trong công việc;
-[PLO14] Tự định hướng, đưa ra các quyết định liên quan đến công tác chuyên môn và quản lý, đồng thời có thể bảo vệ được quan điểm cá nhân;
-[PLO15] Có năng lực lập kế hoạch, điều phối các nguồn lực trong tổ chức/ doanh nghiệp, phát huy trí tuệ tập thể và đánh giá, cải tiến các hoạt động liên quan đến chuyên môn công nghệ tài chính.
+Ngành Công nghệ tài chính Fintech Chỉ tiêu: Năm 2023: 120, Năm 2022: 110,Năm 2021: 100
 
-Công nghệ tài chính – Fintech
-Học kỳ 1
-Triết học Mác-Lênin: 3 tín chỉ
-Tin học cơ sở 1: 2 tín chỉ
-Nguyên lý kế toán: 3 tín chỉ
-Toán cao cấp 1: 2 tín chỉ
-Pháp luật đại cương: 2 tín chỉ
+Ngành Công nghệ tài chính Fintech Điểm trúng tuyển:Năm 2023: 25,35, Năm 2022: 25,85,Năm 2021: 25,90
 
-Học kỳ 2
-Kinh tế chính trị Mác-Lênin: 2 tín chỉ
-Tiếng Anh Course 1: 4 tín chỉ
-Tin học cơ sở 2: 2 tín chỉ
-Toán cao cấp 2: 2 tín chỉ
-Kế toán quản trị: 3 tín chỉ
-Tài chính tiền tệ: 3 tín chỉ
-Cơ sở dữ liệu (Fintech): 3 tín chỉ
+Ngành Công nghệ tài chính Fintech Tổ hợp xét tuyển: Toán – Lý – Hóa (A00) hoặc Toán – Lý – Anh (A01) hoặc Toán - Văn - Anh (D01)
 
-Học kỳ 3
-Chủ nghĩa xã hội khoa học: 2 tín chỉ
-Tiếng Anh Course 2: 4 tín chỉ
-Lý thuyết xác suất và thống kê: 3 tín chỉ
-Tài chính doanh nghiệp: 3 tín chỉ
-XNK và thanh toán quốc tế: 3 tín chỉ
-Lập trình Python (Fintech): 2 tín chỉ
+Chuẩn đầu ra Ngành Công nghệ tài chính Fintech về kiến thức.[PLO1] Vận dụng các kiến thức cơ bản về khoa học xã hội, chính trị và pháp luật trong học tập, nghiên cứu và thực hiện các hoạt động nghề nghiệp liên quan đến.[PLO2] Vận dụng các kiến thức cơ bản và chuyên sâu về tài chính, công nghệ thông tin, công nghệ tài chính để giải quyết các vấn đề thực tiễn liên quan đến công nghệ tài chính.[PLO3] Lập kế hoạch hoạt động chuyên môn liên quan đến công nghệ tài chính trong các tổ chức khác nhau; tổ chức thực hiện và giám sát việc thực thi kế hoạch này.[PLO4] Thực thi quản lý điều hành các các dự án liên quan đến công nghệ tài chính nói chung và khởi nghiệp về công nghệ tài chính nói riêng.
 
-Học kỳ 4
-Lịch sử Đảng cộng sản Việt Nam: 2 tín chỉ
-Tiếng Anh Course 3: 4 tín chỉ
-Công nghệ tài chính căn bản: 3 tín chỉ
-Phân tích nghiệp vụ kinh doanh: 3 tín chỉ
-Lập trình web (Fintech): 3 tín chỉ
-01 học phần tự chọn: 3 tín chỉ
-Marketing căn bản: 3 tín chỉ
-Thương mại điện tử: 3 tín chỉ
-Phát triển hệ thống TMĐT: 3 tín chỉ
-Nhập môn khoa học dữ liệu: 3 tín chỉ
-Quản lý dự án Fintech: 3 tín chỉ
-Nhập môn kinh doanh: 3 tín chỉ
-Tài chính quốc tế: 3 tín chỉ
-Ứng dụng ERP, CRM trong tài chính: 3 tín chỉ
-Phát triển ứng dụng trên di động: 3 tín chỉ
-Hệ thống thanh toán điện tử: 3 tín chỉ
-Tài chính xanh: 3 tín chỉ
+Chuẩn đầu ra Ngành Công nghệ tài chính Fintech về kỹ năng chuyên môn:[PLO5] Sử dụng các công cụ tài chính để quản lý tài chính, quản lý rủi ro tài chính, quản lý các hoạt động đầu tư, kinh doanh trong các doanh nghiệp và các tổ chức tài chính.[PLO6] Phân tích và quản lý dữ liệu tài chính, sử dụng các phần mềm/ứng dụng công nghệ thông tin trong hoạt động của định chế tài chính, thị trường tài chính và doanh nghiệp.[PLO7] Xác định và cụ thể hóa các giải pháp kỹ thuật đối với các dự án vừa và nhỏ về CNTT nói chung và công nghệ tài chính nói riêng về phát triển phần mềm, phân tích nghiệp vụ, kiểm thử và tích hợp hệ thống.[PLO8] Phản biện, và phân tích lựa chọn các phương án thay thế trong các quyết định liên quan đến chuyên môn; cập nhật công nghệ mới, chủ động đổi mới sáng tạo thích ứng với môi trường thay đổi.
 
-Học kỳ 5
-Tư tưởng Hồ Chí Minh: 2 tín chỉ
-Tiếng Anh Course 3 Plus: 2 tín chỉ
-Phân tích và thiết kế HTTT quản lý (Fintech): 3 tín chỉ
-01 học phần tự chọn: 3 tín chỉ
-Marketing căn bản: 3 tín chỉ
-Thương mại điện tử: 3 tín chỉ
-Phát triển hệ thống TMĐT: 3 tín chỉ
-Nhập môn khoa học dữ liệu: 3 tín chỉ
-Quản lý dự án Fintech: 3 tín chỉ
-Nhập môn kinh doanh: 3 tín chỉ
-Tài chính quốc tế: 3 tín chỉ
-Ứng dụng ERP, CRM trong tài chính: 3 tín chỉ
-Phát triển ứng dụng trên di động: 3 tín chỉ
-Hệ thống thanh toán điện tử: 3 tín chỉ
-Tài chính xanh: 3 tín chỉ
-Đầu tư tài chính: 3 tín chỉ
-Phân tích và lập kế hoạch tài chính: 3 tín chỉ
-An toàn bảo mật thông tin (Fintech): 3 tín chỉ
+Chuẩn đầu ra Ngành Công nghệ tài chính Fintech về kỹ năng mềm:[PLO9] Hiểu và truyền đạt vấn đề và giải pháp tới người khác tại nơi làm việc; truyền tải, phổ biến kiến thức, kỹ năng trong việc thực hiện những nhiệm vụ cụ thể hoặc phức tạp liên quan đến công nghệ tài chính.[PLO10] Vận dụng kiến thức đã học để dẫn dắt, khởi nghiệp nói chung và liên quan đến công nghệ tài chính nói riêng nhằm tạo việc làm cho mình và xã hội; thực thi viết báo cáo, đánh giá chất lượng công việc sau khi hoàn thành và kết quả thực hiện của các thành viên trong nhóm.
 
-Học kỳ 6
-Nghiệp vụ ngân hàng thương mạ: 3 tín chỉ
-Kinh tế lượng tài chính: 3 tín chỉ
-CN Blockchain và ƯD trong TC: 3 tín chỉ
-Tài chính hành vi: 3 tín chỉ
-Đề án Công nghệ tài chính: 3 tín chỉ
-01 học phần tự chọn: 3 tín chỉ
-Marketing căn bản: 3 tín chỉ
-Thương mại điện tử: 3 tín chỉ
-Phát triển hệ thống TMĐT: 3 tín chỉ
-Nhập môn khoa học dữ liệu: 3 tín chỉ
-Quản lý dự án Fintech: 3 tín chỉ
-Nhập môn kinh doanh: 3 tín chỉ
-Tài chính quốc tế: 3 tín chỉ
-Ứng dụng ERP, CRM trong tài chính: 3 tín chỉ
-Phát triển ứng dụng trên di động: 3 tín chỉ
-Hệ thống thanh toán điện tử: 3 tín chỉ
-Tài chính xanh: 3 tín chỉ
+Chuẩn đầu ra Ngành Công nghệ tài chính Fintech về kỹ năng ngoại ngữ và tin họcz:[PLO11] Đạt trình độ tiếng Anh 450 điểm TOEIC quốc tế trở lên hoặc tương đương; Có khả năng sử dụng tiếng Anh phục vụ học tập, nghiên cứu, hoà nhập nhanh với cộng đồng công nghệ tài chính khu vực và quốc tế sau khi ra trường.[PLO12] Sử dụng thành thạo máy vi tính, thành thạo các công nghệ lập trình cơ bản phục vụ công tác chuyên môn, phân tích số liệu, biên soạn tài liệu báo các và các công việc liên quan.
 
-Học kỳ 7
-Trí tuệ nhân tạo trong TC: 3 tín chỉ
-Quản trị rủi ro tài chính: 3 tín chỉ
-Quản lý và ứng dụng dữ liệu trong TC: 2 tín chỉ
-Phân tích dữ liệu tài chính quy mô lớn: 3 tín chỉ
-Đổi mới sáng tạo tài chính: 3 tín chỉ
-01 học phần tự chọn: 3 tín chỉ
-Marketing căn bản: 3 tín chỉ
-Thương mại điện tử: 3 tín chỉ
-Phát triển hệ thống TMĐT: 3 tín chỉ
-Nhập môn khoa học dữ liệu: 3 tín chỉ
-Quản lý dự án Fintech: 3 tín chỉ
-Nhập môn kinh doanh: 3 tín chỉ
-Tài chính quốc tế: 3 tín chỉ
-Ứng dụng ERP, CRM trong tài chính: 3 tín chỉ
-Phát triển ứng dụng trên di động: 3 tín chỉ
-Hệ thống thanh toán điện tử: 3 tín chỉ
-Tài chính xanh: 3 tín chỉ
+Năng lực tự chủ và trách nhiệm Ngành Công nghệ tài chính Fintech:[PLO13] Có phẩm chất đạo đức, ý thức nghề nghiệp, trách nhiệm công dân, có ý thức và năng lực hợp tác trong công việc.[PLO14] Tự định hướng, đưa ra các quyết định liên quan đến công tác chuyên môn và quản lý, đồng thời có thể bảo vệ được quan điểm cá nhân.[PLO15] Có năng lực lập kế hoạch, điều phối các nguồn lực trong tổ chức/ doanh nghiệp, phát huy trí tuệ tập thể và đánh giá, cải tiến các hoạt động liên quan đến chuyên môn công nghệ tài chính.
 
-Học kỳ 8
-Thực tập và tốt nghiệp: 10 tín chỉ
+Nghề nghiệp Ngành Công nghệ tài chính Fintech Nhóm 1: Các bộ phận quản lý hệ thống thông tin, quản trị phân tích dữ liệu, quản trị và phân tích rủi ro, quản lý dự án công nghệ tại các định chế tài chính; bộ phát triển công nghệ tài chính, phát triển các giải pháp công nghệ tại các định chế tài chính (ngân hàng, công ty tài chính, công ty bảo hiểm, công ty chứng khoán).Nhóm 2: Bộ phận phát triển các giải pháp dịch vụ công nghệ tài chính trong công ty Fintech hoặc tự tạo lập doanh nghiệp khởi nghiệp Fintech riêng cho bản thân.Nhóm 3: Bộ phận phát triển sản phẩm, dịch vụ tại Công ty công nghệ; bộ phận phân tích tại Công ty bán lẻ, Thương mại điện tử,.Nhóm 4: Bộ phận công nghệ thông tin, quản lý phát kinh tế số, công nghệ tài chính tại một số cơ quan nhà nước như: Bộ thông tin truyền thông, Ngân hàng Nhà nước, Bộ Tài chính và Bộ Khoa học và Công nghệ.Nhóm 5: Các cơ sở đào tạo, viện nghiên cứu về tài chính, ngân hàng, công nghệ thông tin trong lĩnh vực tài chính, công nghệ tài chính.
 
+Học phí Ngành Công nghệ tài chính Fintech Học phí sẽ được thanh toán theo từng học kỳ, dựa trên số tín chỉ mà sinh viên đăng ký trong học kỳ. Thời gian đóng học phí là 1 tháng kể từ khi có thông báo của nhà trường. Sinh viên sẽ thực hiện đóng học phí theo quy định mà Học viện ban hành; - Học phí theo tín chỉ năm 2023: 700.000 đ/tín chỉ. Ghi chú: - Thời gian hoàn thành chương trình sẽ phụ thuộc vào số lượng môn học sinh viên lựa chọn học trong một học kỳ. - Lộ trình tăng học phí tối đa cho từng năm: Mức học phí được điều chỉnh theo lộ trình phù hợp tương xứng với chất lượng đào tạo và đảm bảo tỷ lệ tăng không quá 15%/năm (theo Nghị định 81/2021/NĐ-CP của Chính phủ).
 
-
-
-Nghề nghiệp
-Nhóm 1: Các bộ phận quản lý hệ thống thông tin, quản trị phân tích dữ liệu, quản trị và phân tích rủi ro, quản lý dự án công nghệ tại các định chế tài chính; bộ phát triển công nghệ tài chính, phát triển các giải pháp công nghệ tại các định chế tài chính (ngân hàng, công ty tài chính, công ty bảo hiểm, công ty chứng khoán).
-Nhóm 2: Bộ phận phát triển các giải pháp dịch vụ công nghệ tài chính trong công ty Fintech hoặc tự tạo lập doanh nghiệp khởi nghiệp Fintech riêng cho bản thân.
-Nhóm 3: Bộ phận phát triển sản phẩm, dịch vụ tại Công ty công nghệ; bộ phận phân tích tại Công ty bán lẻ, Thương mại điện tử,.
-Nhóm 4: Bộ phận công nghệ thông tin, quản lý phát kinh tế số, công nghệ tài chính tại một số cơ quan nhà nước như: Bộ thông tin truyền thông, Ngân hàng Nhà nước, Bộ Tài chính và Bộ Khoa học và Công nghệ.
-Nhóm 5: Các cơ sở đào tạo, viện nghiên cứu về tài chính, ngân hàng, công nghệ thông tin trong lĩnh vực tài chính, công nghệ tài chính.
-
-
-
-Học phí
-- Học phí sẽ được thanh toán theo từng học kỳ, dựa trên số tín chỉ mà sinh viên đăng ký trong học kỳ. Thời gian đóng học phí là 1 tháng kể từ khi có thông báo của nhà trường. Sinh viên sẽ thực hiện đóng học phí theo quy định mà Học viện ban hành; - Học phí theo tín chỉ năm 2023: 700.000 đ/tín chỉ. Ghi chú: - Thời gian hoàn thành chương trình sẽ phụ thuộc vào số lượng môn học sinh viên lựa chọn học trong một học kỳ. - Lộ trình tăng học phí tối đa cho từng năm: Mức học phí được điều chỉnh theo lộ trình phù hợp tương xứng với chất lượng đào tạo và đảm bảo tỷ lệ tăng không quá 15%/năm (theo Nghị định 81/2021/NĐ-CP của Chính phủ).
-
-
-
-Điều kiện tuyển sinh
-1. Đối tượng tuyển sinh:
-a) Quy định chung:
-– Thí sinh đã tốt nghiệp chương trình THPT của Việt Nam (theo hình thức giáo dục chính quy hoặc giáo dục thường xuyên) hoặc đã tốt nghiệp trình độ trung cấp (trong đó, người tốt nghiệp trình độ trung cấp nhưng chưa có bằng tốt nghiệp THPT phải học và thi đạt yêu cầu đủ khối lượng kiến thức văn hóa THPT theo quy định của Luật Giáo dục và các văn bản hướng dẫn thi hành) hoặc đã tốt nghiệp chương trình THPT của nước ngoài (đã được nước sở tại cho phép thực hiện, đạt trình độ tương đương trình độ THPT của Việt Nam) ở nước ngoài hoặc ở Việt Nam (sau đây gọi chung là tốt nghiệp THPT);
-– Có đủ sức khỏe để học tập theo quy định hiện hành.
-b) Đối với phương thức xét tuyển dựa vào kết quả thi THPT:
+1. Đối tượng tuyển sinh Ngành Công nghệ tài chính Fintech:
+a) Quy định chung:Thí sinh đã tốt nghiệp chương trình THPT của Việt Nam (theo hình thức giáo dục chính quy hoặc giáo dục thường xuyên) hoặc đã tốt nghiệp trình độ trung cấp (trong đó, người tốt nghiệp trình độ trung cấp nhưng chưa có bằng tốt nghiệp THPT phải học và thi đạt yêu cầu đủ khối lượng kiến thức văn hóa THPT theo quy định của Luật Giáo dục và các văn bản hướng dẫn thi hành) hoặc đã tốt nghiệp chương trình THPT của nước ngoài (đã được nước sở tại cho phép thực hiện, đạt trình độ tương đương trình độ THPT của Việt Nam) ở nước ngoài hoặc ở Việt Nam (sau đây gọi chung là tốt nghiệp THPT).Có đủ sức khỏe để học tập theo quy định hiện hành.
+b) Đối với phương thức xét tuyển dựa vào kết quả thi THPT
 Ngoài các yêu cầu theo quy định chung ở mục a) thì thí sinh phải tham dự kỳ thi tốt nghiệp THPT hàng năm với các bài thi/môn thi theo tổ hợp bài thi/môn thi tương ứng các ngành của Học viện.
-c) Đối với phương thức xét tuyển kết hợp thì ngoài các yêu cầu theo quy định chung ở mục a thì thí sinh cần có thêm một trong các điều kiện sau đây:
-– Thí sinh có Chứng chỉ quốc tế SAT từ 1130/1600 trở lên hoặc ACT từ 25/36 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên;
-– Thí sinh có Chứng chỉ tiếng Anh quốc tế trong thời hạn (tính đến ngày xét tuyển) đạt IELTS 5.5 trở lên hoặc TOEFL iBT 65 trở lên hoặc TOEFL ITP 513 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên;
-– Thí sinh đạt giải Khuyến khích trong kỳ thi chọn học sinh giỏi quốc gia hoặc đã tham gia kỳ thi chọn học sinh giỏi quốc gia hoặc đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi cấp Tỉnh, Thành phố trực thuộc Trung ương (TW) các môn Toán, Lý, Hóa, Tin học và có kết quả điểm chung bình chung học tập lớp 10, 11, 12 và học kỳ 1 lớp 12 đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên;
-– Là học sinh chuyên các môn Toán, Lý, Hóa, Tin học của trường THPT chuyên trên phạm vi toàn quốc (các trường THPT chuyên thuộc Tỉnh, Thành phố trực thuộc TW và các trường THPT chuyên thuộc Cơ sở giáo dục đại học) hoặc hệ chuyên thuộc các trường THPT trọng điểm quốc gia và có kết quả điểm chung bình chung học tập lớp 10, 11, 12 và học kỳ 1 lớp 12 đạt từ 8,0 trở lên và có hạnh kiểm Khá trở lên;
-d) Đối với phương thức xét tuyển dựa vào kết quả bài thi đánh giá năng lực hoặc đánh giá tư duy thì ngoài các yêu cầu theo quy định chung ở mục a thì thí sinh cần có thêm một trong các điều kiện sau đây:
-– Thí sinh có điểm thi đánh giá năng lực của Đại học Quốc gia Hà Nội năm 2023 từ 80 điểm trở lên;
-– Thí sinh có điểm thi đánh giá năng lực của Đại học Quốc gia Tp. Hồ Chí Minh năm 2023 từ 700 điểm trở lên;
-– Thí sinh có điểm thi đánh giá tư duy của Đại học Bách khoa Hà Nội năm 2023 từ 25 điểm trở lên.
-2. Phạm vi tuyển sinh: 
-Học viện tuyển sinh trên phạm vi cả nước, thí sinh đăng ký xét tuyển vào Cơ sở đào tạo (BVH hoặc BVS) nào thì sẽ theo học tại Cơ sở đó.
-3. Phương thức tuyển sinh:
-Học viện Công nghệ Bưu chính Viễn thông sử dụng 04 phương thức tuyển sinh như sau:
+c) Đối với phương thức xét tuyển kết hợp thì ngoài các yêu cầu theo quy định chung ở mục a thì thí sinh cần có thêm một trong các điều kiện sau đây:Thí sinh có Chứng chỉ quốc tế SAT từ 1130/1600 trở lên hoặc ACT từ 25/36 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên.Thí sinh có Chứng chỉ tiếng Anh quốc tế trong thời hạn (tính đến ngày xét tuyển) đạt IELTS 5.5 trở lên hoặc TOEFL iBT 65 trở lên hoặc TOEFL ITP 513 trở lên và có kết quả điểm trung bình chung học tập lớp 10, 11, 12 hoặc học kỳ 1 lớp 12 đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên.Thí sinh đạt giải Khuyến khích trong kỳ thi chọn học sinh giỏi quốc gia hoặc đã tham gia kỳ thi chọn học sinh giỏi quốc gia hoặc đạt giải Nhất, Nhì, Ba trong kỳ thi chọn học sinh giỏi cấp Tỉnh, Thành phố trực thuộc Trung ương (TW) các môn Toán, Lý, Hóa, Tin học và có kết quả điểm chung bình chung học tập lớp 10, 11, 12 và học kỳ 1 lớp 12 đạt từ 7,5 trở lên và có hạnh kiểm Khá trở lên.Là học sinh chuyên các môn Toán, Lý, Hóa, Tin học của trường THPT chuyên trên phạm vi toàn quốc (các trường THPT chuyên thuộc Tỉnh, Thành phố trực thuộc TW và các trường THPT chuyên thuộc Cơ sở giáo dục đại học) hoặc hệ chuyên thuộc các trường THPT trọng điểm quốc gia và có kết quả điểm chung bình chung học tập lớp 10, 11, 12 và học kỳ 1 lớp 12 đạt từ 8,0 trở lên và có hạnh kiểm Khá trở lên;
+d) Đối với phương thức xét tuyển dựa vào kết quả bài thi đánh giá năng lực hoặc đánh giá tư duy thì ngoài các yêu cầu theo quy định chung ở mục a thì thí sinh cần có thêm một trong các điều kiện sau đây:Thí sinh có điểm thi đánh giá năng lực của Đại học Quốc gia Hà Nội năm 2023 từ 80 điểm trở lên.Thí sinh có điểm thi đánh giá năng lực của Đại học Quốc gia Tp. Hồ Chí Minh năm 2023 từ 700 điểm trở lên.Thí sinh có điểm thi đánh giá tư duy của Đại học Bách khoa Hà Nội năm 2023 từ 25 điểm trở lên.
+
+2. Phạm vi tuyển sinh Ngành Công nghệ tài chính Fintech:Học viện tuyển sinh trên phạm vi cả nước, thí sinh đăng ký xét tuyển vào Cơ sở đào tạo (BVH hoặc BVS) nào thì sẽ theo học tại Cơ sở đó.
+
+3. Phương thức tuyển sinh Ngành Công nghệ tài chính Fintech:Học viện Công nghệ Bưu chính Viễn thông sử dụng 04 phương thức tuyển sinh như sau:
 a) Tuyển thẳng và ưu tiên xét tuyển: Học viện xét tuyển thẳng và ưu tiên xét tuyển theo Quy chế tuyển sinh hiện hành của Bộ Giáo dục và Đào tạo (có thông báo chi tiết riêng);
 b) Xét tuyển dựa vào kết quả điểm thi tốt nghiệp THPT;
 c) Xét tuyển kết hợp giữa kết quả học tập ở bậc THPT với một trong các loại Chứng chỉ quốc tế hoặc Thành tích cá nhân trong các kỳ thi tuyển chọn học sinh giỏi như đã nêu trong điểm c) mục 1. về Đối tượng tuyển sinh ở trên (chi tiết sẽ có trong thông báo tuyển sinh).
 d) Xét tuyển dựa vào kết quả bài thi đánh giá năng lực hoặc đánh giá tư duy.
-
-
-Quy trình nhập học
-1. Chọn chương trình
-2. Kiểm tra điều kiện
-3. Chuẩn bị hồ sơ
-4. Nộp hồ sơ
-
