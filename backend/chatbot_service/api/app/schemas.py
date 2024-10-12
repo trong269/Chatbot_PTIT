@@ -31,3 +31,26 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     id: Optional[str] = None
+
+# Model tin nhắn
+class MessageCreate(BaseModel):
+    content: str
+
+class MessageResponse(BaseModel):
+    id: int
+    sender: str
+    content: str
+    created_at: datetime
+
+    class Config:
+        orm_mode = True
+
+# Model cuộc trò chuyện
+class ConversationResponse(BaseModel):
+    id: int
+    start_time: datetime
+    end_time: Optional[datetime]
+    messages: Optional[List[MessageResponse]] = None
+
+    class Config:
+        orm_mode = True
