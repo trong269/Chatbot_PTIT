@@ -2,7 +2,7 @@
   <form class="login__form">
     <div class="form__heading">
       <Image
-        src="https://slinkid.ptit.edu.vn/auth/resources/p64ct/login/ptit/dist/img/logo.png"
+        src="Chatbot_PTIT/frontend/src/assets/logo.png"
         alt="Image"
         height="100"
       />
