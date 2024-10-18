@@ -48,10 +48,10 @@ class QueryTranslation:
         chain = prompt_template | self.llm | StrOutputParser()
         return chain.invoke({"question": question} )
 
-# QT = QueryTranslation()
-# queries = QT.multi_query("Chương trình tuyển sinh của Học viện năm 2024 và chỉ tiêu tuyển sinh của trường")
-# print(queries)
-# print(len(queries))
-# for query in queries:
-#     print(QT.HyDE(query))
-#     print("")
+QT = QueryTranslation()
+queries = QT.multi_query("Chương trình tuyển sinh của Học viện năm 2024 và chỉ tiêu tuyển sinh của trường")
+print(queries)
+print(len(queries))
+for query in queries:
+    print(QT.HyDE(query))
+    print("")
