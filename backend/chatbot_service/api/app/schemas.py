@@ -37,20 +37,22 @@ class MessageCreate(BaseModel):
     content: str
 
 class MessageResponse(BaseModel):
-    id: int
+    message_id: int
+    conversation_id: int
     sender: str
     content: str
     created_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # Model cuộc trò chuyện
 class ConversationResponse(BaseModel):
-    id: int
+    conversation_id: int
+    title: str
     start_time: datetime
-    end_time: Optional[datetime]
+    end_time: Optional[datetime] = None
     messages: Optional[List[MessageResponse]] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
