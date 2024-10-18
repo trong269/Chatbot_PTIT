@@ -24,6 +24,7 @@ class Conversation(Base):
     start_time = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('now()'))
     end_time = Column(TIMESTAMP(timezone=True), nullable=True)
     owner = relationship("User")
+    messages = relationship("Message")
 
 class Message(Base):
     __tablename__ = "messages"
