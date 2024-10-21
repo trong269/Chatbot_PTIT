@@ -362,72 +362,6 @@ def crawl_co_so_vat_chat():
     else:
         print(f'Loi: Khong the truy cap trang. Ma trang thai:{response.status_code}')
 
-
-
-    url = "https://daotao.ptit.edu.vn/chuong-trinh-dao-tao/chuong-trinh-cong-nghe-thong-tin-dinh-huong-ung-dung/"
-    response = requests.get(url)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, 'html.parser')
-        title = soup.title.string
-        body1 = soup.find('ul', class_='column_4 mtop')
-        card = body1.find_all(['label'])
-        card2 = body1.find_all(['strong'])
-        content_pair = [f"{label.get_text()}: {strong.get_text()}" for label, strong in zip(card, card2)]
-        content1 = "\n".join(content_pair)
-
-        body2 = soup.find('div', class_='ova_dir_content')
-        body2_content = body2.find_all(['section'])
-        tong_quan = body2_content[0].get_text()
-        chuan_dau_ra = body2_content[1].get_text()
-
-        li_list = body2_content[2].find('ul', class_='nav-tab').find_all('li')
-        content1 += li_list[0].get_text().strip()
-        content1 += "\n"
-        for i in range(0, 8):
-            hoc_ky = body2_content[2].find('div', id=f"tab-0-{i}")
-            label = hoc_ky.find('label')
-            content1 += label.get_text()
-            content1 += "\n"
-            so_tin = hoc_ky.find_all('div', class_='tag')
-            mon_hoc = hoc_ky.find_all('div', class_='title')
-            pairs = [f"{mon.get_text().strip()}: {tin.get_text().strip()}" for mon, tin in zip(mon_hoc, so_tin)]
-            content_pair = "\n".join(pairs)
-            content1 += content_pair
-            content1 += "\n\n"
-        content1 += li_list[1].get_text().strip()
-        content1 += "\n"
-        for  i in range(0, 8):
-            hoc_ky = content2[2].find('div', id=f"tab-1-{i}")
-            label = hoc_ky.find('label')
-            content1 += label.get_text()
-            content1 += "\n"
-            so_tin = hoc_ky.find_all('div', class_='tag')
-            mon_hoc = hoc_ky.find_all('div', class_='title')
-            pairs = [f"{mon.get_text().strip()}: {tin.get_text().strip()}" for mon, tin in zip(mon_hoc, so_tin)]
-            content_pair = "\n".join(pairs)
-            content1 += content_pair
-            content1 += "\n\n"
-        
-        nghe_nghiep = body2_content[3].get_text()
-        hoc_phi = body2_content[4].get_text()
-        dk_tuyen_sinh = body2_content[5].get_text()
-        qt_nhap_hoc = body2_content[6]
-        content_qtnh = ''
-        content_qtnh += qt_nhap_hoc.find_all(['h3'])[0].get_text() + "\n"
-        content_qtnh += "\n".join(p.get_text() for p in qt_nhap_hoc.find_all(['label']))
-
-        output_file_path = os.path.join(DATA_FOLDER_PATH, 'chuong_trinh_cong_nghe_thong_tin_dinh_huong_ung_dung.txt')
-        with open(output_file_path, 'w', encoding='utf-8') as f:
-            f.write(f'Tiêu đề: {title}\n\n')
-            f.write(f'{content1}\n\n')
-            f.write(f'{tong_quan}\n\n')
-            f.write(f'{chuan_dau_ra}\n\n')
-            # f.write(f'{ct_ct}\n\n')
-            f.write(f'{nghe_nghiep}\n\n')
-            f.write(f'{hoc_phi}\n\n')
-            f.write(f'{dk_tuyen_sinh}\n\n')
-            f.write(f'{content_qtnh}\n\n')
-
 def crawl_khoa_hoc_may_tinh():
     url = "https://daotao.ptit.edu.vn/chuong-trinh-dao-tao/nganh-khoa-hoc-may-tinh/#tai_lieu_dao_tao"
     response = requests.get(url)
@@ -1889,6 +1823,152 @@ def crawl_chtrinh_cntt_dinh_huong_ung_dung():
     else:
         print(f'Loi khong the truy cap trang. Ma trang thai: {response.status_code}')
 
+def crawl_doi_ngu_can_bo_phong_dao_tao():
+    url = "https://daotao.ptit.edu.vn/gioi-thieu/doi-ngu-can-bo-phong-dao-tao/?fbclid=IwY2xjawFqPQtleHRuA2FlbQIxMAABHd7TdZvocI4f55HFKcS05Bx3W675W5chbcksu32xuYUg1wBA0zxevlsUpA_aem_PWX43vwiVdCocf2reGQHCg"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+        
+        body = soup.find('div', class_="e-con-inner")
+        
+        content_paragraphs = body.find_all(['h2', 'p'])
+        content = "\n".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'doi_ngu_can_bo_phong_dao_tao.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title}\n\n')
+            f.write(content)
+
+def crawl_co_so_vat_chat_hoc_vien():
+    url = "https://daotao.ptit.edu.vn/gioi-thieu/co-so-vat-chat-hoc-vien/?fbclid=IwY2xjawFqPQ5leHRuA2FlbQIxMAABHUQCgNBz3jkYC7y-FQqI4oPMgb2RJU5IXluA_CEE7caNQfXsxfrd40blLQ_aem__-7CSXC3fgcHU884IeWj8Q"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="elementor elementor-312")
+       
+        content_paragraphs = body.find_all(['h2', 'p'])
+        content = "\n".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'co_so_vat_chat_hoc_vien.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title}\n\n')
+            f.write(content)
+
+def crawl_chuc_nang_nhiem_vu():
+    url = "https://daotao.ptit.edu.vn/gioi-thieu/chuc-nang-nhiem-vu/?fbclid=IwY2xjawFqPQhleHRuA2FlbQIxMAABHWL3Dm0ObGrB_RQN9J9y4YSNyEeanOwukn8slsCWAbfdfXpflZcYuIGI7Q_aem_3aMZLa07sTjMxCXIGJdvFg"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="elementor elementor-286")
+       
+        content_paragraphs = body.find_all(['h5', 'p'])
+        content = " ".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'chuc_nang_nhiem_vu.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title} ')
+            f.write(content)
+
+def crawl_cau_lac_bo_sinh_vien():
+    url = "https://ptit.edu.vn/sinh-vien/cau-lac-bo-sinh-vien"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="e-con-inner")
+       
+        content_paragraphs = body.find_all(['h3', 'p'])
+        content = " ".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'cau_lac_bo_sinh_vien.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title} ')
+            f.write(content)
+
+def crawl_doan_thanh_nien():
+    url = "https://ptit.edu.vn/sinh-vien/doan-thanh-nien"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="e-con-inner")
+       
+        content_paragraphs = body.find_all(['h3', 'p'])
+        content = " ".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'doan_thanh_nien.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title} ')
+            f.write(content)
+
+def crawl_khai_truong_phong_thuc_hanh_cong_nghe_game():
+    url = "https://ptit.edu.vn/tin-tuc/hoc-vien-cong-nghe-buu-chinh-vien-thong-khai-truong-phong-thuc-hanh-cong-nghe-game"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="ova_dir_content")
+       
+        content_paragraphs = body.find_all(['h1', 'p'])
+        content = " ".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'khai_truong_phong_thuc_hanh_cong_nghe_game.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title} ')
+            f.write(content)
+
+def crawl_dai_su_NVIDIA():
+    url = "https://ptit.edu.vn/tin-tuc/giang-vien-hoc-vien-cong-nghe-buu-chinh-vien-thong-duoc-cong-nhan-la-dai-su-nvidia"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="ova_dir_content")
+       
+        content_paragraphs = body.find_all(['h1', 'p'])
+        content = " ".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'dai_su_NVIDIA.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title} ')
+            f.write(content)
+
+def thanh_lap_khoa_AI():
+    url = "https://ptit.edu.vn/tin-tuc/truong-dai-hoc-dau-tien-tai-viet-nam-lap-khoa-tri-tue-nhan-tao"
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        title = soup.title.string
+
+        body = soup.find('div', class_="ova_dir_content")
+       
+        content_paragraphs = body.find_all(['h1', 'p'])
+        content = " ".join([p.get_text() for p in content_paragraphs])
+
+        output_file_path = os.path.join(DATA_FOLDER_PATH, 'thanh_lap_khoa_AI.txt')
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            f.write(f'Tiêu đề: {title} ')
+            f.write(content)
+
+
+
 if __name__ == '__main__':
     # crawl_lich_su_truyen_thong()
     # crawl_y_nghia_logo()
@@ -1900,7 +1980,8 @@ if __name__ == '__main__':
     # crawl_ban_giam_doc_hoc_vien()
     # crawl_hoi_dong_khoa_hoc_va_dao_tao()
     # crawl_hoi_dong_giao_su_co_so()
-    # crawl_nguon_nhan_luc()    # # crawl_co_so_vat_chat()
+    # crawl_nguon_nhan_luc()  
+    # crawl_co_so_vat_chat()
     # crawl_khoa_hoc_may_tinh()
     # crawl_cong_nghe_thong_tin()
     # crawl_an_toan_thong_tin()
@@ -1923,5 +2004,13 @@ if __name__ == '__main__':
     # crawl_ke_toan_chat_luong_cao_chuan_quoc_te_acca()
     # crawl_chuong_trinh_quan_he_cong_chung_nganh_marketing()
     # crawl_chuong_trinh_thiet_ke_va_phat_trien_game()
-    crawl_chuong_trinh_cong_nghe_thong_tin_viet_nhat()
-    crawl_chtrinh_cntt_dinh_huong_ung_dung()
+    # crawl_chuong_trinh_cong_nghe_thong_tin_viet_nhat()
+    # crawl_chtrinh_cntt_dinh_huong_ung_dung()
+    # crawl_doi_ngu_can_bo_phong_dao_tao()
+    # crawl_co_so_vat_chat_hoc_vien()
+    # crawl_chuc_nang_nhiem_vu()
+    # crawl_cau_lac_bo_sinh_vien()
+    # crawl_doan_thanh_nien()
+    # crawl_khai_truong_phong_thuc_hanh_cong_nghe_game()
+    # crawl_dai_su_NVIDIA()
+    thanh_lap_khoa_AI()
