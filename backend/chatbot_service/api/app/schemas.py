@@ -31,3 +31,28 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     id: Optional[str] = None
+
+# Model tin nhắn
+class MessageCreate(BaseModel):
+    content: str
+
+class MessageResponse(BaseModel):
+    message_id: int
+    conversation_id: int
+    sender: str
+    content: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+# Model cuộc trò chuyện
+class ConversationResponse(BaseModel):
+    conversation_id: int
+    title: str
+    start_time: datetime
+    end_time: Optional[datetime] = None
+    messages: Optional[List[MessageResponse]] = None
+
+    class Config:
+        from_attributes = True
