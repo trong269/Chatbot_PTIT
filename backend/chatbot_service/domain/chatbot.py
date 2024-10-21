@@ -1,7 +1,8 @@
-from retriever import Retriever
-from query_translation import QueryTranslation
-from routing import Router, RouteQuery
-from api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.retriever import Retriever
+from domain.query_translation import QueryTranslation
+from domain.routing import Router, RouteQuery
+from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+# from .api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.documents.base import Document
 from langchain.prompts import ChatPromptTemplate
@@ -10,9 +11,11 @@ from langchain_core.output_parsers import StrOutputParser
 CHUNK_SIZE = 300
 OVERLAP_SIZE = 50
 MAX_BATCH_SIZE = 166
-DATA_PATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu"
-DATA_PATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao"
-DATA_PATH3 = "C:\workspace\AI\Chatbot_PTIT\Data\Other"
+DATA_PATH1 = "D:\Workspace\Chatbot_PTIT\Data\Gioi thieu"
+DATA_PATH2 = "D:\Workspace\Chatbot_PTIT\Data\Chuong trinh dao tao"
+DATA_PATH3 = "D:\Workspace\Chatbot_PTIT\Data\Other"
+
+# print(API_KEY)
 
 class ChatBot():
     def __init__(self , api_key: str = API_KEY , model: str = GEMINI_MODEL, embedding_model: str = EMBEDDING_MODEL, top_k: int = 5 ):

@@ -7,7 +7,7 @@ from langchain.storage import InMemoryByteStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.load import dumps, loads
 from langchain_core.documents.base import Document
-from api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
 
 
 # Tạo lớp loader tùy chỉnh với encoding 'utf-8'

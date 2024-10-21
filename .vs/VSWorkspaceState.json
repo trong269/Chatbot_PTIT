@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\chatbot_service",
+    "\\backend\\chatbot_service\\domain"
+  ],
+  "SelectedNode": "\\backend\\chatbot_service\\domain\\routing.py",
+  "PreviewInSolutionExplorer": false
+}
