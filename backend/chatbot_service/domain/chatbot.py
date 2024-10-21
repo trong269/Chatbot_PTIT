@@ -10,7 +10,9 @@ from langchain_core.output_parsers import StrOutputParser
 CHUNK_SIZE = 300
 OVERLAP_SIZE = 50
 MAX_BATCH_SIZE = 166
-
+DATA_PATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu"
+DATA_PATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao"
+DATA_PATH3 = "C:\workspace\AI\Chatbot_PTIT\Data\Other"
 
 class ChatBot():
     def __init__(self , api_key: str = API_KEY , model: str = GEMINI_MODEL, embedding_model: str = EMBEDDING_MODEL, top_k: int = 5 ):
@@ -19,13 +21,13 @@ class ChatBot():
         self.router = Router(api_key = self.api_key , model = model, RouteQuery = RouteQuery)
 
         self.retriever1 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever1.add_documents_to_retriever(data_path="C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever1.add_documents_to_retriever(data_path=DATA_PATH1, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.retriever2 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever2.add_documents_to_retriever(data_path="C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever2.add_documents_to_retriever(data_path= DATA_PATH2, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.retriever3 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever3.add_documents_to_retriever(data_path="C:\workspace\AI\Chatbot_PTIT\Data\Other", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever3.add_documents_to_retriever(data_path= DATA_PATH3, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
         self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0.2)
@@ -36,7 +38,6 @@ class ChatBot():
         routing = self.routing_document(queries)
         documents = self.retrival(routing, queries)
         print(f"tìm được {len(documents)} tài liệu")
-        print(documents[ 0 ].page_content)
         template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông.
         Dựa vào kiến thúc của bạn bên dưới, hãy trả lời câu hỏi của người dùng đưa ra:
         {context}
@@ -82,7 +83,6 @@ class ChatBot():
     def retrival(self, routing: dict, queries: list[ str ] )-> list[Document]:
         """ Tìm kiếm các tài liệu phù hợp với các câu hỏi"""
         results = []
-        print(routing)
         for key, value in routing.items():
             if key == "retriever1" and len(value) > 0:
                 results.extend( self.retriever1.multi_query(value, top_k = self.top_k))
@@ -94,7 +94,7 @@ class ChatBot():
                 continue
         return results
 
-# questions = "chủ nhiệm câu lạc bộ IT PTIT là ai ?"
+# questions = "Học phí của ngành Công nghệ thông tin là bao nhiêu?"
 
 # chatbot = ChatBot( api_key= API_KEY, model= GEMINI_MODEL, embedding_model= EMBEDDING_MODEL, top_k = 5)
 
