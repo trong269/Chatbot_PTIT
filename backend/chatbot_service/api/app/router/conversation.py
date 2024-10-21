@@ -4,6 +4,7 @@ from fastapi import status, HTTPException, Depends, APIRouter, FastAPI, Response
 from sqlalchemy.orm import Session
 from .. import schemas, utils, models, oauth2
 from ..database import get_db
+from domain.chatbot import ChatBot
 
 router = APIRouter(
     prefix="/conversations",
@@ -59,7 +60,9 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     db.commit()
     db.refresh(new_message_user)
 
-    response_message = "Đây là phản hồi từ AI"
+    bot = ChatBot()
+    response_message = bot.chat(message.content)
+    # response_message = "Đây là phản hồi từ AI"
     
     new_message_bot = models.Message(conversation_id=conversation_id, content=response_message, sender="bot")
     db.add(new_message_bot)

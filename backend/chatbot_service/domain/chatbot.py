@@ -1,7 +1,8 @@
-from retriever import Retriever
-from query_translation import QueryTranslation
-from routing import Router, RouteQuery
-from api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.retriever import Retriever
+from domain.query_translation import QueryTranslation
+from domain.routing import Router, RouteQuery
+from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+# from .api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.documents.base import Document
 from langchain.prompts import ChatPromptTemplate
@@ -11,6 +12,7 @@ CHUNK_SIZE = 300
 OVERLAP_SIZE = 50
 MAX_BATCH_SIZE = 166
 
+# print(API_KEY)
 
 class ChatBot():
     def __init__(self , api_key: str = API_KEY , model: str = GEMINI_MODEL, embedding_model: str = EMBEDDING_MODEL, top_k: int = 5 ):
@@ -19,13 +21,13 @@ class ChatBot():
         self.router = Router(api_key = self.api_key , model = model, RouteQuery = RouteQuery)
 
         self.retriever1 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever1.add_documents_to_retriever(data_path="C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever1.add_documents_to_retriever(data_path="D:/Workspace/Chatbot_PTIT/Data/Gioi thieu", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.retriever2 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever2.add_documents_to_retriever(data_path="C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever2.add_documents_to_retriever(data_path="D:/Workspace/Chatbot_PTIT/Data/Chuong trinh dao tao", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.retriever3 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever3.add_documents_to_retriever(data_path="C:\workspace\AI\Chatbot_PTIT\Data\Other", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever3.add_documents_to_retriever(data_path="D:/Workspace/Chatbot_PTIT/Data/Other", chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
         self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0.2)
@@ -94,7 +96,7 @@ class ChatBot():
                 continue
         return results
 
-# questions = "chủ nhiệm câu lạc bộ IT PTIT là ai ?"
+# questions = "Tìm hiểu về khoa công nghệ thông tin của học viện công nghệ bưu chính viễn thông?"
 
 # chatbot = ChatBot( api_key= API_KEY, model= GEMINI_MODEL, embedding_model= EMBEDDING_MODEL, top_k = 5)
 

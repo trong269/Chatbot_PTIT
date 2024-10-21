@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from .router import auth, user, conversation
 # models.Base.metadata.create_all(bind = engine)
+
 app = FastAPI()
 
 app.add_middleware(
