@@ -94,7 +94,7 @@ class ChatBot():
                 continue
         return results
 
-# questions = "Học phí của ngành Công nghệ thông tin là bao nhiêu?"
+# questions = "ptit có bao nhiêu câu lạc bộ ?"
 
 # chatbot = ChatBot( api_key= API_KEY, model= GEMINI_MODEL, embedding_model= EMBEDDING_MODEL, top_k = 5)
 

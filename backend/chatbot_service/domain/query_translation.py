@@ -10,7 +10,7 @@ class QueryTranslation:
 
     def multi_query(self, question : str, k : int = 2)-> list[str]:
         """ Tạo ra nhiều câu hỏi khác nhau từ câu hỏi đầu vào"""
-        template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông. 
+        template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông (PTIT). 
         Nhiệm vụ của bạn là tạo ra {k} phiên bản khác nhau của câu hỏi mà người dùng đưa ra để truy xuất các tài liệu liên quan từ cơ sở dữ liệu vector. 
         Bằng cách tạo ra nhiều góc nhìn khác nhau về câu hỏi của người dùng, mục tiêu của bạn là giúp người dùng vượt qua một số hạn chế của phương pháp tìm kiếm tương tự dựa trên khoảng cách. 
         Hãy cung cấp các câu hỏi thay thế này, chỉ in ra dòng chứa các câu hỏi không in dòng thừa hoặc dòng không liên quan, mỗi câu hỏi trên một dòng . 
@@ -36,7 +36,7 @@ class QueryTranslation:
         return [query for query in queries if query != "" and query != " "]
     def HyDE(self , question: str) -> str:
         """đưa ra câu trả lời giả định cho câu hỏi đầu vào"""
-        template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông,
+        template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông (PTIT).,
             giả sử bạn đã biết thông tin có trong câu hỏi, hãy viết một đoạn văn ngắn giả định số liệu liệu không cần chính xác 
             nhưng ngữ nghĩa phải giống với câu trả lời thực tế nhất
             để trả lời câu hỏi
