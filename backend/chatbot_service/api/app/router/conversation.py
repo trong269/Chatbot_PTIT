@@ -11,6 +11,9 @@ router = APIRouter(
     tags=['conversations']
 )
 
+
+bot = ChatBot()
+
 @router.get("/", response_model=List[schemas.ConversationResponse])
 def get_conversation(db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
     conversation_query = db.query(models.Conversation).filter(models.Conversation.user_id == current_user.user_id)
@@ -62,7 +65,6 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     db.commit()
     db.refresh(new_message_user)
 
-    bot = ChatBot()
     response_message = bot.chat(message.content)
     # response_message = "Đây là phản hồi từ AI"
     

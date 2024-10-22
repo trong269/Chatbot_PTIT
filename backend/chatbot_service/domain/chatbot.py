@@ -8,12 +8,12 @@ from langchain_core.documents.base import Document
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-CHUNK_SIZE = 300
-OVERLAP_SIZE = 50
+CHUNK_SIZE = 1024
+OVERLAP_SIZE = 128
 MAX_BATCH_SIZE = 166
-DATA_PATH1 = "D:\Workspace\Chatbot_PTIT\Data\Gioi thieu"
-DATA_PATH2 = "D:\Workspace\Chatbot_PTIT\Data\Chuong trinh dao tao"
-DATA_PATH3 = "D:\Workspace\Chatbot_PTIT\Data\Other"
+DATA_PATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu"
+DATA_PATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao"
+DATA_PATH3 = "C:\workspace\AI\Chatbot_PTIT\Data\Other"
 
 # print(API_KEY)
 
@@ -33,7 +33,7 @@ class ChatBot():
         self.retriever3.add_documents_to_retriever(data_path= DATA_PATH3, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
-        self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0.2)
+        self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0)
 
     def chat(self, question: str)-> str:
         """ Hàm chính của chatbot"""
@@ -86,13 +86,20 @@ class ChatBot():
     def retrival(self, routing: dict, queries: list[ str ] )-> list[Document]:
         """ Tìm kiếm các tài liệu phù hợp với các câu hỏi"""
         results = []
+        len_prev = 0
         for key, value in routing.items():
             if key == "retriever1" and len(value) > 0:
                 results.extend( self.retriever1.multi_query(value, top_k = self.top_k))
+                print(f"tìm được {len(results)} tài liệu từ thông tin giới thiệu về học viện")
+                len_prev = len(results)
             elif key == "retriever2" and len(value) > 0:
                 results.extend( self.retriever2.multi_query(value, top_k = self.top_k))
+                print(f"tìm được {len(results) - len_prev} tài liệu từ chương trình đào tạo của học viện")
+                len_prev = len(results)
             elif key == "retriever3" and len(value) > 0:
                 results.extend( self.retriever3.multi_query(value, top_k = self.top_k))
+                print(f"tìm được {len(results) - len_prev} tài liệu từ tin tức và sự kiện của học viện")
+                len_prev = len(results)
             else:
                 continue
         return results
