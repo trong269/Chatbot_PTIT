@@ -1,6 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
-from api_key import API_KEY, GEMINI_MODEL
+from domain.api_key import API_KEY, GEMINI_MODEL
 from langchain_core.pydantic_v1 import BaseModel, Field
 from typing import Literal
 

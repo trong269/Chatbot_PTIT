@@ -4,6 +4,7 @@ from fastapi import status, HTTPException, Depends, APIRouter, FastAPI, Response
 from sqlalchemy.orm import Session
 from .. import schemas, utils, models, oauth2
 from ..database import get_db
+from domain.chatbot import ChatBot
 
 router = APIRouter(
     prefix="/conversations",
@@ -29,9 +30,10 @@ def start_conversation(title: str, db: Session = Depends(get_db), current_user =
     return conversation
 
 @router.put("/{conversation_id}/end", response_model=schemas.ConversationResponse)
-def end_conversation(conversation_id: int, db: Session = Depends(get_db)):
+def end_conversation(conversation_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
     # Tìm kiếm conversation theo conversation_id
-    conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id).first()
+    conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id,
+                                                        models.Conversation.user_id == current_user.user_id).first()
     
     # Nếu không tìm thấy conversation
     if not conversation:
@@ -50,16 +52,19 @@ def end_conversation(conversation_id: int, db: Session = Depends(get_db)):
 
 @router.post("/{conversation_id}/messages", response_model=schemas.MessageResponse)
 def add_message(conversation_id: int, message: schemas.MessageCreate, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id).first()
+    conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id,
+                                                        models.Conversation.end_time == None).first()
     if not conversation:
-        return HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Conversation {conversation_id} not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Conversation {conversation_id} not found or already ended")
     
     new_message_user = models.Message(conversation_id=conversation_id, content=message.content, sender="user")
     db.add(new_message_user)
     db.commit()
     db.refresh(new_message_user)
 
-    response_message = "Đây là phản hồi từ AI"
+    bot = ChatBot()
+    response_message = bot.chat(message.content)
+    # response_message = "Đây là phản hồi từ AI"
     
     new_message_bot = models.Message(conversation_id=conversation_id, content=response_message, sender="bot")
     db.add(new_message_bot)
@@ -67,3 +72,15 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     db.refresh(new_message_bot)
 
     return new_message_bot
+
+@router.delete("/{conversation_id}",status_code=status.HTTP_204_NO_CONTENT)
+def delete_conversation(conversation_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+    conversation_query = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id,
+                                  models.Conversation.user_id == current_user.user_id)
+    
+    if not conversation_query.first():
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"Conversation {conversation_id} doesn't belong to you")
+    
+    conversation_query.delete(synchronize_session=False)
+    db.commit()
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

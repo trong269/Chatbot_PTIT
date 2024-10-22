@@ -52,6 +52,7 @@ class ConversationResponse(BaseModel):
     title: str
     start_time: datetime
     end_time: Optional[datetime] = None
+    owner: UserOut
     messages: Optional[List[MessageResponse]] = None
 
     class Config:
