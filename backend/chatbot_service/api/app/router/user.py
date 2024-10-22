@@ -10,17 +10,20 @@ router = APIRouter(
     tags=['users']
 )
 
-@router.get("/", response_model= List[schemas.UserOut])
-async def get_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    users = db.query(models.User).all()
+# @router.get("/", response_model= List[schemas.UserOut])
+# async def get_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+#     users = db.query(models.User).all()
 
-    if not users:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User doesn't exist")
+#     if not users:
+#         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User doesn't exist")
 
-    return users
+#     return users
 
 @router.get("/{user_id}", response_model= schemas.UserOut)
 async def get_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+    if user_id != current_user.user_id:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"You don't have permission to do this")
+    
     # Kiểm tra xem user_id có tồn tại trong group_id không
     user = db.query(models.User).filter(models.User.user_id == user_id).first()
 
@@ -81,7 +84,7 @@ async def update_user(user_update: schemas.UserUpdate, db: Session = Depends(get
     db.refresh(user)
     return user
 
-@router.delete("/")
+@router.delete("/{user_id}",status_code=status.HTTP_204_NO_CONTENT)
 async def delete_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
     if user_id != current_user.user_id:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"You don't have permission to do it")
