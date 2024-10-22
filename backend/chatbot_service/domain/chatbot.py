@@ -35,21 +35,27 @@ class ChatBot():
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
         self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0)
 
-    def chat(self, question: str)-> str:
+    def chat(self, question: str, history_messages: str )-> str:
         """ Hàm chính của chatbot"""
         queries = self.translate_query(question, k_query=6)
         routing = self.routing_document(queries)
         documents = self.retrival(routing, queries)
+        print("--------------------------")
+        for docs , queries in routing.items():
+            print(f"có {len(queries)} thuộc về {docs}")
         print(f"tìm được {len(documents)} tài liệu")
-        template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông.
-        Dựa vào kiến thúc của bạn bên dưới, hãy trả lời câu hỏi của người dùng đưa ra:
-        {context}
+        print("--------------------------")
+        print()
+        template = """Bạn là một chuyên gia tư vấn của Học Viện Công Nghệ Bưu Chính Viễn Thông hỗ trợ trả lời các câu hỏi của người dùng. Hãy sử dụng kiến thức của bạn cùng với các câu hỏi và câu trả lời trong quá khứ để đưa ra câu trả lời chính xác và đầy đủ nhất cho câu hỏi mới của người dùng. Nếu thông tin trong ngữ cảnh hoặc lịch sử câu hỏi không đủ, hãy đưa ra câu trả lời hợp lý cho người dùng với vai trò bạn là một chuyên gia tư vấn. Dưới đây là kiến thức mà bạn biết, những cuộc hội thoại đã trao đổi trong quá khứ và câu hỏi mới:"
+            kiến thức của bạn: {context}
 
-        Câu hỏi: {question}
+            Lịch sử câu hỏi và câu trả lời: {history}
+            
+            Câu hỏi mới của người dùng: {question}
         """
         prompt = ChatPromptTemplate.from_template(template)
         chain = prompt | self.llm | StrOutputParser()
-        anwser = chain.invoke({"question": question, "context": documents})
+        anwser = chain.invoke({"question": question, "context": documents, "history": history_messages})
         return anwser
     def translate_query(self, query:str , k_query : int )->list[str]:
         """ tạo ra nhiều truy vấn ở nhiều khía cạnh khác nhau từ câu hỏi đầu vào"""

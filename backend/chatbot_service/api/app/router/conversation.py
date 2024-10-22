@@ -13,6 +13,7 @@ router = APIRouter(
 
 
 bot = ChatBot()
+history_messages = []
 
 @router.get("/", response_model=List[schemas.ConversationResponse])
 def get_conversation(db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
@@ -26,6 +27,7 @@ def get_conversation(db: Session = Depends(get_db), current_user = Depends(oauth
 # Khởi tạo cuộc trò chuyện mới khi người dùng bắt đầu phiên trò chuyện
 @router.post("/", response_model=schemas.ConversationResponse)
 def start_conversation(title: str, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+    history_messages.clear()
     conversation = models.Conversation(user_id=current_user.user_id, title = title, end_time = None)
     db.add(conversation)
     db.commit()
@@ -34,6 +36,7 @@ def start_conversation(title: str, db: Session = Depends(get_db), current_user =
 
 @router.put("/{conversation_id}/end", response_model=schemas.ConversationResponse)
 def end_conversation(conversation_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+    history_messages.clear()
     # Tìm kiếm conversation theo conversation_id
     conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id,
                                                         models.Conversation.user_id == current_user.user_id).first()
@@ -65,8 +68,11 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     db.commit()
     db.refresh(new_message_user)
 
-    response_message = bot.chat(message.content)
-    # response_message = "Đây là phản hồi từ AI"
+    response_message = bot.chat(message.content , "\n".join(history_messages))
+    history_number = str(len(history_messages)+1)
+    history = f"""câu hỏi số {history_number}: {message.content}
+    câu trả lời: {response_message}"""
+    history_messages.append(history)
     
     new_message_bot = models.Message(conversation_id=conversation_id, content=response_message, sender="bot")
     db.add(new_message_bot)
