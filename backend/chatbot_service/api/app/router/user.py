@@ -19,13 +19,13 @@ router = APIRouter(
 
 #     return users
 
-@router.get("/{user_id}", response_model= schemas.UserOut)
-async def get_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    if user_id != current_user.user_id:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"You don't have permission to do this")
+@router.get("/", response_model= schemas.UserOut)
+async def get_user(db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+    # if user_id != current_user.user_id:
+    #     raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"You don't have permission to do this")
     
     # Kiểm tra xem user_id có tồn tại trong group_id không
-    user = db.query(models.User).filter(models.User.user_id == user_id).first()
+    user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
 
     if not user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User {user_id} doesn't exist")
