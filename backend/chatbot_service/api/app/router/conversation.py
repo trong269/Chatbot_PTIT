@@ -69,7 +69,7 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     db.refresh(new_message_user)
 
     # Lấy lịch sử tin nhắn của cuộc trò chuyện hiện tại từ database
-    history_messages = db.query(models.Message).filter(models.Message.conversation_id == conversation_id).all()
+    history_messages = db.query(models.Message).filter(models.Message.conversation_id == conversation_id).order_by(models.Message.message_id.asc()).all()
     
     # Tạo lịch sử tin nhắn dạng chuỗi
     history = []
