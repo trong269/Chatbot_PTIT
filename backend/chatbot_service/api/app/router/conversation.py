@@ -39,7 +39,8 @@ def end_conversation(conversation_id: int, db: Session = Depends(get_db), curren
     # history_messages.clear()
     # Tìm kiếm conversation theo conversation_id
     conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id,
-                                                        models.Conversation.user_id == current_user.user_id).first()
+                                                        models.Conversation.user_id == current_user.user_id
+                                                        ).first()
     
     # Nếu không tìm thấy conversation
     if not conversation:
