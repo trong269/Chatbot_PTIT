@@ -11,9 +11,9 @@ from langchain_core.output_parsers import StrOutputParser
 CHUNK_SIZE = 1024
 OVERLAP_SIZE = 128
 MAX_BATCH_SIZE = 166
-DATA_PATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu"
-DATA_PATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao"
-DATA_PATH3 = "C:\workspace\AI\Chatbot_PTIT\Data\Other"
+DATA_PATH1 = "D:\Workspace\Chatbot_PTIT\Data\Gioi thieu"
+DATA_PATH2 = "D:\Workspace\Chatbot_PTIT\Data\Chuong trinh dao tao"
+DATA_PATH3 = "D:\Workspace\Chatbot_PTIT\Data\Other"
 
 # print(API_KEY)
 

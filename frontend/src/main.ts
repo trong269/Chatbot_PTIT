@@ -6,6 +6,9 @@ import router from './routers'
 import 'primeicons/primeicons.css'
 import './style.css'
 import { definePreset } from '@primevue/themes'
+import axios from 'axios'
+import ConfirmationService from 'primevue/confirmationservice'
+import ToastService from 'primevue/toastservice'
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -36,6 +39,15 @@ const MyPreset = definePreset(Aura, {
   },
 })
 
+axios.defaults.baseURL = 'http://localhost:8000'
+axios.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token')
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`
+  }
+  return config
+})
+
 createApp(App)
   .use(router)
   .use(PrimeVue, {
@@ -46,4 +58,6 @@ createApp(App)
       },
     },
   } as PrimeVueConfiguration)
+  .use(ConfirmationService)
+  .use(ToastService)
   .mount('#app')

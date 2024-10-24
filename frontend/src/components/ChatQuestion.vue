@@ -9,7 +9,7 @@
   align-self: flex-end;
   background-color: var(--p-gray-300);
   padding: 8px 18px;
-  border-radius: 40px;
+  border-radius: var(--p-inputtext-border-radius);
 }
 .chat__question_content {
   margin: 0;
