@@ -1,10 +1,17 @@
-export type MessageType = 'answer' | 'question'
+export type Sender = 'user' | 'bot'
 
 export interface Message {
-  type: MessageType
+  sender: Sender
   content?: string
 }
 
 export interface Answer extends Message {
-  type: 'answer'
+  sender: 'bot'
+}
+
+export interface Conversation {
+  conversation_id: number
+  title: string
+  messages: Message[]
+  end_time?: string
 }

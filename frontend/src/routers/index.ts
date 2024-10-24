@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import LoginView from '../views/LoginView.vue'
 import AuthLayout from '../layouts/AuthLayout.vue'
+import ChatView from '../views/ChatView/ChatView.vue'
+import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
-import ChatView from '../views/ChatView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -10,8 +10,13 @@ const routes: RouteRecordRaw[] = [
     redirect: '/chat',
   },
   {
-    path: '/chat',
+    path: '/chat/:id?',
     component: ChatView,
+    beforeEnter: (_, __, next) => {
+      const token = localStorage.getItem('token')
+      if (!token) next('/login')
+      else next()
+    },
   },
   {
     path: '/',

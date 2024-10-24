@@ -1,5 +1,5 @@
 <template>
-  <ChatAnswer v-if="data.type === 'answer'" :content="data.content" />
+  <ChatAnswer v-if="data.sender === 'bot'" :content="data.content" />
   <ChatQuestion v-else :content="data.content" />
 </template>
 
