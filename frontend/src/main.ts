@@ -43,6 +43,11 @@ axios.defaults.baseURL = 'http://localhost:8000'
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem('token')
   if (token) {
+    if (new Date(localStorage.getItem('expiration') || '') < new Date() {
+      localStorage.removeItem('token')
+      localStorage.removeItem('expiration')
+      window.location.href = '/login'
+    }
     config.headers.Authorization = `Bearer ${token}`
   }
   return config
