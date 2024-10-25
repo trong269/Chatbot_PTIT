@@ -65,32 +65,28 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     if not conversation:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Conversation {conversation_id} not found or already ended")
     
+    # Lấy lịch sử tin nhắn của cuộc trò chuyện hiện tại từ database
+    history_messages = db.query(models.Message).filter(models.Message.conversation_id == conversation_id).order_by(models.Message.message_id.asc()).all()
+    # Tạo lịch sử tin nhắn dạng chuỗi
+    history = []
+    count = 0
+    for msg in history_messages:
+        if msg.sender == 'user':
+            count += 1
+            history.append(f"câu hỏi số {count}: {msg.content}")
+        else:
+            history.append(f"câu trả lời của câu hỏi {count}: {msg.content}")
+    
+    # Lưu câu hỏi của người dùng vào database
     new_message_user = models.Message(conversation_id=conversation_id, content=message.content, sender="user")
     db.add(new_message_user)
     db.commit()
     db.refresh(new_message_user)
 
-    # Lấy lịch sử tin nhắn của cuộc trò chuyện hiện tại từ database
-    history_messages = db.query(models.Message).filter(models.Message.conversation_id == conversation_id).order_by(models.Message.message_id.asc()).all()
-    
-    # Tạo lịch sử tin nhắn dạng chuỗi
-    history = []
-    for i, msg in enumerate(history_messages, 1):
-        history_entry = f"câu hỏi số {i}: {msg.content}" if msg.sender == 'user' else f"câu trả lời: {msg.content}"
-        history.append(history_entry)
-    
-    # Kết hợp lịch sử thành một chuỗi để truyền vào chatbot
-    history_text = "\n".join(history)
-    
-    # Truyền lịch sử tin nhắn cho bot
-    response_message = bot.chat(message.content, history_text)
- 
-    # response_message = bot.chat(message.content , "\n".join(history_messages))
-    # history_number = str(len(history_messages)+1)
-    # history = f"""câu hỏi số {history_number}: {message.content}
-    # câu trả lời: {response_message}"""
-    # history_messages.append(history)
-    
+    # Truyền câu hỏi và lịch sử tin nhắn cho bot
+    response_message = bot.chat(message.content, history)
+
+    # Lưu câu trả lời của bot vào database
     new_message_bot = models.Message(conversation_id=conversation_id, content=response_message, sender="bot")
     db.add(new_message_bot)
     db.commit()
