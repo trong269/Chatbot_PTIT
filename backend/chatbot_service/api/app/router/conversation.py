@@ -17,7 +17,7 @@ bot = ChatBot()
 
 @router.get("/", response_model=List[schemas.ConversationResponse])
 def get_conversation(db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    conversation_query = db.query(models.Conversation).filter(models.Conversation.user_id == current_user.user_id)
+    conversation_query = db.query(models.Conversation).filter(models.Conversation.user_id == current_user.user_id).order_by(models.Conversation.conversation_id.asc())
     if not conversation_query.first():
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User: {current_user.user_id} doesn't have conversations")
     
