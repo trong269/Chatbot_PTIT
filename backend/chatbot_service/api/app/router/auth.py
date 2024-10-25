@@ -26,7 +26,7 @@ async def login(user_credentials: OAuth2PasswordRequestForm = Depends(), db: Ses
 
     return{"access_token": access_token, "token_type": "bearer"}
 
-@router.get('/test', response_model=List[schemas.UserOut])
-async def get_post(current_user = Depends(oauth2.get_current_user), db: Session = Depends(database.get_db)):
-    users = db.query(models.User).all()
-    return users
+# @router.get('/test', response_model=List[schemas.UserOut])
+# async def get_post(current_user = Depends(oauth2.get_current_user), db: Session = Depends(database.get_db)):
+#     users = db.query(models.User).all()
+#     return users
