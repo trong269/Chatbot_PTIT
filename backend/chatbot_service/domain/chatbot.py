@@ -35,18 +35,22 @@ class ChatBot():
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
         self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0)
 
-    def chat(self, question: str, history_messages: str )-> str:
+    def chat(self, question: str, history_messages: list[str] )-> str:
         """ Hàm chính của chatbot"""
-        queries = self.translate_query(question, k_query=6)
+        # chuyển câu hỏi thành các truy vấn
+        queries = self.translate_query(question, k_query= 6 )
+        # phân loại các truy vấn vào các nguồn dữ liệu
         routing = self.routing_document(queries)
+        # tìm kiếm các tài liệu phù hợp
         documents = self.retrival(routing, queries)
+        history_messages_text = "\n".join(history_messages)
         print("--------------------------")
         for docs , queries in routing.items():
             print(f"có {len(queries)} thuộc về {docs}")
         print(f"tìm được {len(documents)} tài liệu")
         print("--------------------------")
         print()
-        template = """Bạn là một chuyên gia tư vấn của Học Viện Công Nghệ Bưu Chính Viễn Thông hỗ trợ trả lời các câu hỏi của người dùng. Hãy sử dụng kiến thức của bạn cùng với các câu hỏi và câu trả lời trong quá khứ để đưa ra câu trả lời chính xác và đầy đủ nhất cho câu hỏi mới của người dùng. Nếu thông tin trong ngữ cảnh hoặc lịch sử câu hỏi không đủ, hãy đưa ra câu trả lời hợp lý cho người dùng với vai trò bạn là một chuyên gia tư vấn. Dưới đây là kiến thức mà bạn biết, những cuộc hội thoại đã trao đổi trong quá khứ và câu hỏi mới:"
+        template = """Bạn là một chuyên gia tư vấn của Học Viện Công Nghệ Bưu Chính Viễn Thông hỗ trợ trả lời các câu hỏi của người dùng. Hãy sử dụng kiến thức của bạn cùng với các câu hỏi và câu trả lời trong quá khứ để đưa ra câu trả lời chính xác và đầy đủ nhất cho câu hỏi mới của người dùng. Nếu thông tin trong ngữ cảnh hoặc lịch sử câu hỏi không đủ, hãy nói rằng bạn không biết thông tin đó và hướng dẫn người dùng tìm kiếm thông tin nơi khác. Dưới đây là kiến thức mà bạn biết, những cuộc hội thoại đã trao đổi trong quá khứ và câu hỏi mới:"
             kiến thức của bạn: {context}
 
             Lịch sử câu hỏi và câu trả lời: {history}
@@ -55,7 +59,7 @@ class ChatBot():
         """
         prompt = ChatPromptTemplate.from_template(template)
         chain = prompt | self.llm | StrOutputParser()
-        anwser = chain.invoke({"question": question, "context": documents, "history": history_messages})
+        anwser = chain.invoke({"question": question, "context": documents, "history": history_messages_text})
         return anwser
     def translate_query(self, query:str , k_query : int )->list[str]:
         """ tạo ra nhiều truy vấn ở nhiều khía cạnh khác nhau từ câu hỏi đầu vào"""
@@ -67,6 +71,8 @@ class ChatBot():
         queries.extend(multi_queries)
         queries.extend(decomposition_queries)
         queries.append(HyDE_query)
+        if len(queries) > k_query:
+            return queries[:k_query]
         return queries
 
     def routing_document(self , queries:list[str]) -> dict[str, list[str]]:

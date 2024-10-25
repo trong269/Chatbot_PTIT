@@ -1,11 +1,7 @@
 <template>
   <form class="login__form">
     <div class="form__heading">
-      <Image
-        src="Chatbot_PTIT/frontend/src/assets/logo.png"
-        alt="Image"
-        height="100"
-      />
+      <Image :src="logo" alt="Image" height="100" />
       <h2>Chatbot PTIT</h2>
     </div>
     <InputText v-model="username" placeholder="Tên đăng nhập" :autofocus="true" fluid />
@@ -30,17 +26,19 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { login } from '../services/auth-service'
+import logo from '../assets/logo.png'
 
 const router = useRouter()
 const username = ref('')
 const password = ref('')
-const remember = ref(false)
+const remember = ref(true)
 const submitting = ref(false)
 
 const doLogin = async () => {
   try {
     submitting.value = true
-    await login(username.value, password.value)
+    const result = await login({ username: username.value, password: password.value })
+    localStorage.setItem('token', result.access_token)
     router.push('/chat')
   } catch (error) {
     console.error(error)

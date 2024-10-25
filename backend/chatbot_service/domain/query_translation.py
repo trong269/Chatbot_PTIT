@@ -8,6 +8,17 @@ class QueryTranslation:
     def __init__(self, api_key=API_KEY, model=GEMINI_MODEL):
         self.llm = ChatGoogleGenerativeAI( model=model, api_key=api_key, temperature=0.3)
 
+    def gen_query_from_memory(self, question: str, memory: str, k: int = 2)-> str:
+        template = """Bạn là một trợ lý hữu ích tạo ra duy nhất một câu hỏi rõ ràng chi tiết dể dễ dàng truy vấn trong vector database từ một câu hỏi đầu vào và một bộ nhớ trước đó.
+            bộ nhớ trước đó: {memory}
+            câu hỏi đầu vào: {question}
+            chỉ in ra câu hỏi, không in ra dòng trống hoặc dòng không liên quan. Nếu câu hỏi đầu vào và bộ nhớ trước đó không liên quan, hãy giữ nguyên câu hỏi đầu vào.
+            """
+        prompt_template = ChatPromptTemplate.from_template(template)
+        chain = prompt_template | self.llm | StrOutputParser()
+        query = chain.invoke({"question": question, "memory": memory})
+        return query.strip().lower()
+
     def multi_query(self, question : str, k : int = 2)-> list[str]:
         """ Tạo ra nhiều câu hỏi khác nhau từ câu hỏi đầu vào"""
         template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông (PTIT). 
@@ -19,7 +30,7 @@ class QueryTranslation:
         prompt_template = ChatPromptTemplate.from_template(template) 
         chain = prompt_template | self.llm | StrOutputParser() | (lambda x: x.split("\n"))
         queries = chain.invoke({"question": question, "k" : k })
-        return [query for query in queries if query != "" and query != " "]
+        return [query.strip().lower() for query in queries if query != "" and query != " "]
 
     def decomposition(self, question: str, k: int = 3)-> list[str]:
         """ Phân rã câu hỏi đầu vào thành các câu hỏi con"""
@@ -33,7 +44,7 @@ class QueryTranslation:
         prompt_template = ChatPromptTemplate.from_template(template) 
         chain = prompt_template | self.llm | StrOutputParser() | (lambda x: x.split("\n"))
         queries = chain.invoke({"question": question, "k" : k })
-        return [query for query in queries if query != "" and query != " "]
+        return [query.strip().lower() for query in queries if query != "" and query != " "]
     def HyDE(self , question: str) -> str:
         """đưa ra câu trả lời giả định cho câu hỏi đầu vào"""
         template = """Bạn là chuyên gia tư vấn thông tin về Học Viện Công Nghệ Bưu Chính Viễn Thông (PTIT).,
@@ -46,7 +57,8 @@ class QueryTranslation:
             """
         prompt_template = ChatPromptTemplate.from_template(template)
         chain = prompt_template | self.llm | StrOutputParser()
-        return chain.invoke({"question": question} )
+        anwser = chain.invoke({"question": question})
+        return anwser.strip().lower()
 
 # QT = QueryTranslation()
 # queries = QT.multi_query("Chương trình tuyển sinh của Học viện năm 2024 và chỉ tiêu tuyển sinh của trường")

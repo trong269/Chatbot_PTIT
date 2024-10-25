@@ -47,7 +47,10 @@ class Retriever(MultiVectorRetriever):
         for i in range(len(documents)):
             chunked_doc = text_splitter.split_documents([documents[i]])
             for chunk in chunked_doc:
+                #tạo id cho từng phần nhỏ
                 chunk.metadata[self.id_key] = doc_ids[i]
+                # chuyển tất cả các đoạn văn bản thành chữ thường
+                chunk.page_content = chunk.page_content.lower()
             chunks.extend(chunked_doc)
         return (chunks, doc_ids)
     

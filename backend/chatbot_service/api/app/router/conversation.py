@@ -39,7 +39,8 @@ def end_conversation(conversation_id: int, db: Session = Depends(get_db), curren
     # history_messages.clear()
     # Tìm kiếm conversation theo conversation_id
     conversation = db.query(models.Conversation).filter(models.Conversation.conversation_id == conversation_id,
-                                                        models.Conversation.user_id == current_user.user_id).first()
+                                                        models.Conversation.user_id == current_user.user_id
+                                                        ).first()
     
     # Nếu không tìm thấy conversation
     if not conversation:
@@ -75,8 +76,6 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
         else:
             history.append(f"câu trả lời của câu hỏi {count}: {msg.content}")
     
-    # Kết hợp lịch sử thành một chuỗi để truyền vào chatbot
-    history_text = "\n".join(history)
     # Lưu câu hỏi của người dùng vào database
     new_message_user = models.Message(conversation_id=conversation_id, content=message.content, sender="user")
     db.add(new_message_user)
@@ -84,7 +83,7 @@ def add_message(conversation_id: int, message: schemas.MessageCreate, db: Sessio
     db.refresh(new_message_user)
 
     # Truyền câu hỏi và lịch sử tin nhắn cho bot
-    response_message = bot.chat(message.content, history_text)
+    response_message = bot.chat(message.content, history)
 
     # Lưu câu trả lời của bot vào database
     new_message_bot = models.Message(conversation_id=conversation_id, content=response_message, sender="bot")

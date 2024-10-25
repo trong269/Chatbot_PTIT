@@ -19,13 +19,13 @@ router = APIRouter(
 
 #     return users
 
-@router.get("/{user_id}", response_model= schemas.UserOut)
-async def get_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    if user_id != current_user.user_id:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"You don't have permission to do this")
+@router.get("/", response_model= schemas.UserOut)
+async def get_user(db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
+    # if user_id != current_user.user_id:
+    #     raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"You don't have permission to do this")
     
     # Kiểm tra xem user_id có tồn tại trong group_id không
-    user = db.query(models.User).filter(models.User.user_id == user_id).first()
+    user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
 
     if not user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User {user_id} doesn't exist")
@@ -62,12 +62,7 @@ async def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     return new_user  
 
 @router.put("/", response_model=schemas.UserOut)
-async def update_user(user_update: schemas.UserUpdate, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    if user_update.username != current_user.username:
-        user_query = db.query(models.User).filter(models.User.username == user_update.username)
-        if user_query.first():
-            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"username: {user_update.username} already exits")
-        
+async def update_user(user_update: schemas.UserUpdate, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):        
     if user_update.email != current_user.email:
         user_query = db.query(models.User).filter(models.User.email == user_update.email)
         if user_query.first():
@@ -75,7 +70,6 @@ async def update_user(user_update: schemas.UserUpdate, db: Session = Depends(get
         
     user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
 
-    user.username = user_update.username
     user.password = utils.hash(user_update.password)
     user.email = user_update.email
     user.full_name = user_update.full_name
