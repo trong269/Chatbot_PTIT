@@ -68,6 +68,8 @@ async def update_user(user_update: schemas.UserUpdate, db: Session = Depends(get
         if user_query.first():
             raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"email: {user_update.email} already exits")
         
+    utils.validate_password_strength(user_update.password)
+        
     user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
 
     user.password = utils.hash(user_update.password)

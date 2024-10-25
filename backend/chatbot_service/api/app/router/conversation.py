@@ -27,7 +27,8 @@ def get_conversation(db: Session = Depends(get_db), current_user = Depends(oauth
 # Khởi tạo cuộc trò chuyện mới khi người dùng bắt đầu phiên trò chuyện
 @router.post("/", response_model=schemas.ConversationResponse)
 def start_conversation(title: str, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
-    # history_messages.clear()
+    if title == None or title.strip() == "":
+        raise HTTPException(status_code=status.HTTP_417_EXPECTATION_FAILED, detail=f"You must enter a valid title")
     conversation = models.Conversation(user_id=current_user.user_id, title = title, end_time = None)
     db.add(conversation)
     db.commit()
