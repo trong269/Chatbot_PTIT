@@ -12,7 +12,7 @@ router = APIRouter(
 )
 
 
-bot = ChatBot()
+bot = ChatBot(top_k=7)
 # history_messages = []
 
 @router.get("/", response_model=List[schemas.ConversationResponse])

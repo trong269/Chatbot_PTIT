@@ -1,6 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
-from domain.api_key import API_KEY, GEMINI_MODEL
+from domain.api_key import API_KEY, GEMINI_MODEL, TEMPERATURE
 from pydantic import BaseModel, Field
 from typing import Literal
 
@@ -16,7 +16,7 @@ class RouteQuery(BaseModel):
 
 class Router():
     def __init__(self , api_key: str , model:str , RouteQuery: RouteQuery):
-        self.llm = ChatGoogleGenerativeAI( api_key = api_key, model= model , temperature=0.5).with_structured_output(RouteQuery)
+        self.llm = ChatGoogleGenerativeAI( api_key = api_key, model= model , temperature=TEMPERATURE).with_structured_output(RouteQuery)
     def routing(self, query: str) -> str:
         system = """
             Bạn là chuyên gia định tuyến câu hỏi của người dùng đến nguồn dữ liệu phù hợp. Dưới đây là danh sách các nguồn dữ liệu:

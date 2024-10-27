@@ -1,3 +1,6 @@
 venv
 .git
 **/node_modules
+log.txt
+log2.txt
+memory.txt
