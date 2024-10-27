@@ -1,15 +1,15 @@
 from domain.retriever import Retriever
 from domain.query_translation import QueryTranslation
 from domain.routing import Router, RouteQuery
-from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL, TEMPERATURE
 # from .api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.documents.base import Document
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-CHUNK_SIZE = 1024
-OVERLAP_SIZE = 128
+CHUNK_SIZE = 300
+OVERLAP_SIZE = 50
 MAX_BATCH_SIZE = 166
 DATA_PATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu"
 DATA_PATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao"
@@ -33,7 +33,7 @@ class ChatBot():
         self.retriever3.add_documents_to_retriever(data_path= DATA_PATH3, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
-        self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature=0)
+        self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature= TEMPERATURE)
 
     def chat(self, question: str, history_messages: list[str] )-> str:
         """ Hàm chính của chatbot"""
@@ -43,17 +43,19 @@ class ChatBot():
         routing = self.routing_document(queries)
         # tìm kiếm các tài liệu phù hợp
         documents = self.retrival(routing, queries)
-        history_messages_text = "\n".join(history_messages)
+        history_messages_text = "\n".join(history_messages) if len(history_messages) <= 10 else "\n".join(history_messages[-10 :])
+        # with open("C:\workspace\AI\Chatbot_PTIT\memory.txt", 'w' , encoding='utf-8') as f:
+        #     f.write(history_messages_text)
         print("--------------------------")
         for docs , queries in routing.items():
             print(f"có {len(queries)} thuộc về {docs}")
         print(f"tìm được {len(documents)} tài liệu")
         print("--------------------------")
         print()
-        template = """Bạn là một chuyên gia tư vấn của Học Viện Công Nghệ Bưu Chính Viễn Thông hỗ trợ trả lời các câu hỏi của người dùng. Hãy sử dụng kiến thức của bạn cùng với các câu hỏi và câu trả lời trong quá khứ để đưa ra câu trả lời chính xác và đầy đủ nhất cho câu hỏi mới của người dùng. Nếu thông tin trong ngữ cảnh hoặc lịch sử câu hỏi không đủ, hãy nói rằng bạn không biết thông tin đó và hướng dẫn người dùng tìm kiếm thông tin nơi khác. Dưới đây là kiến thức mà bạn biết, những cuộc hội thoại đã trao đổi trong quá khứ và câu hỏi mới:"
+        template = """Bạn là một chuyên gia tư vấn của Học Viện Công Nghệ Bưu Chính Viễn Thông hỗ trợ trả lời các câu hỏi của người dùng. Hãy sử dụng kiến thức của bạn cùng với ký ức của bạn trong quá khứ để đưa ra câu trả lời chính xác và đầy đủ nhất cho câu hỏi mới của người dùng. Nếu thông tin không nằm trong kiến thức hoặc ký ức của bạn, hãy nói rằng bạn không biết thông tin đó và hướng dẫn người dùng tìm kiếm thông tin nơi khác. Dưới đây là kiến thức mà bạn biết, ký ức của bạn đã trao đổi cùng người dùng trong quá khứ và câu hỏi mới:"
             kiến thức của bạn: {context}
 
-            Lịch sử câu hỏi và câu trả lời: {history}
+            ký ức của bạn: {history}
             
             Câu hỏi mới của người dùng: {question}
         """
@@ -114,6 +116,10 @@ class ChatBot():
                 len_prev = len(results)
             else:
                 continue
+            # with open("C:\workspace\AI\Chatbot_PTIT\log2.txt", 'w' , encoding='utf-8') as f:
+            #     text = results
+            #     text = "\n---------------------------\n".join([ doc.page_content for doc in text ])
+            #     f.write(text)
         return results
 
 # questions = "ptit có bao nhiêu câu lạc bộ ?"

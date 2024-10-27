@@ -2,59 +2,35 @@ Tiêu đề: Hội đồng Giáo sư cơ sở Học viện Công nghệ Bưu Ch�
 
 STT, Họ và tên, Chức danh đăng ký (GS/PGS), Ngành, Nơi làm việc
 1, Phạm Ngọc Anh, Giáo sư, Toán học, Học viện Công nghệ Bưu chính Viễn thông
-
 2, Lê Văn Hùng, Phó giáo sư, Công nghệ thông tin, Trường Đại học Tân Trào, Tỉnh Tuyên Quang
-
 3, Trần Thị Lượng, Phó giáo sư, Công nghệ thông tin, Học viện Kỹ thuật mật mã
-
 4, Vũ Hữu Tiến, Phó giáo sư, Điện – Điện tử – Tự động hóa, Học viện Công nghệ Bưu chính Viễn thông
-
 5, Nguyễn Chiến Trinh, Phó giáo sư, Điện – Điện tử – Tự động hóa, Học viện Công nghệ Bưu chính Viễn thông
-
 6, Dương Thị Thanh Tú, Phó giáo sư, Điện – Điện tử – Tự động hóa, Học viện Công nghệ Bưu chính Viễn thông
 
 STT, Họ và tên, Nam/Nữ, Ngày sinh, Học vị, Chức vụ, đơn vị công tác, Chức danh (GS/PGS), Ngành hoặc Liên ngành đăng ký xét công nhận tiêu chuẩn GS, PGS, Bản đăng ký
 I, Ứng viên đăng ký xét đạt chuẩn giáo sư
 1, Phạm Ngọc Anh, Nam, 02/08/1970, Tiến sĩ, Trưởng khoa Cơ bản 1, Giáo sư, ngành Toán học, Ban dang ky_PNAnh (1)
-
 II, Ứng viên đăng ký xét đạt chuẩn phó giáo sư, , 
 1, Vũ Hữu Tiến, Nam, 13/10/1979, Tiến sĩ, Phụ trách bộ môn Công nghệ Đa phương tiện, Khoa Đa phương tiện, Phó giáo sư, Ngành Điện, Điện tử, tự động hóa, Ban dang ky_VHTien
-
 2, Nguyễn Chiến Trinh, Nam, 24/01/1966, Tiến sĩ, Phó trưởng khoa Viễn thông 1, Phó giáo sư, Ngành Điện, Điện tử, tự động hóa, Ban dang ky_NCTrinh
-
 3, Dương Thị Thanh Tú, Nữ, 01/06/1976, Tiến sĩ, Giảng viên chính Khoa Viễn thông 1, Phó giáo sư, Ngành Điện, Điện tử, tự động hóa, Ban dang ky_DTTTu
-
 4, Trần Thị Lượng, Nữ, 05/05/1984, Tiến sĩ, Phó chủ nhiệm Khoa, Khoa An Toàn thông tin Học viện Kỹ thuật mật mã, Phó giáo sư, Ngành Công nghệ thông tin, Ban dang ky_TTLuong
-
 5, Lê Văn Hùng, Nam, 23/11/1987, Tiến sĩ, Trưởng bộ môn Tin học, Trường Đại học Tân Trào, Tỉnh Tuyên Quang, Phó giáo sư, Ngành Công nghệ thông tin, Ban dang ky_LVHung
 
 STT, Họ và Tên, Ngành, Đơn vị công tác
-1, GS.TS. Bùi Xuân Phong, Kinh tế, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-2, GS. TS. Từ Minh Phương, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-3, GS.TS. Võ Nguyễn Quốc Bảo, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
+1, Giáo sư Tiến sĩ Bùi Xuân Phong, Kinh tế, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+2, Giáo sư Tiến sĩ Từ Minh Phương, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+3, Giáo sư Tiến sĩ Võ Nguyễn Quốc Bảo, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
 4, PGS.TSKH. Hoàng Đăng Hải, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-5, PGS.TS. Trần Quang Anh, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-6, PGS.TS. Phạm Văn Cường, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-7, PGS.TS. Hoàng Hữu Hạnh, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-8, PGS.TS. Hoàng Xuân Dậu, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-9, PGS.TS. Nguyễn Mạnh Hùng, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-10, PGS.TS. Đỗ Xuân Chợ, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-11, PGS.TS. Nguyễn Tiến Ban, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-12, PGS.TS. Lê Nhật Thăng, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-13, PGS.TS. Lê Hải Châu, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-14, PGS.TS. Trần Trung Duy, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
-
-15, PGS.TS. Lê Bá Long, Toán học, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+5, Phó giáo sư Tiến sĩ Trần Quang Anh, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+6, Phó giáo sư Tiến sĩ Phạm Văn Cường, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+7, Phó giáo sư Tiến sĩ Hoàng Hữu Hạnh, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+8, Phó giáo sư Tiến sĩ Hoàng Xuân Dậu, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+9, Phó giáo sư Tiến sĩ Nguyễn Mạnh Hùng, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+10, Phó giáo sư Tiến sĩ Đỗ Xuân Chợ, Công nghệ thông tin, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+11, Phó giáo sư Tiến sĩ Nguyễn Tiến Ban, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+12, Phó giáo sư Tiến sĩ Lê Nhật Thăng, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+13, Phó giáo sư Tiến sĩ Lê Hải Châu, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+14, Phó giáo sư Tiến sĩ Trần Trung Duy, Điện tử, Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+15, Phó giáo sư Tiến sĩ Lê Bá Long, Toán học, Học viện Công nghệ Bưu Chính Viễn Thông PTIT

@@ -1,12 +1,12 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL, TEMPERATURE
 
 
 class QueryTranslation:
     def __init__(self, api_key=API_KEY, model=GEMINI_MODEL):
-        self.llm = ChatGoogleGenerativeAI( model=model, api_key=api_key, temperature=0.3)
+        self.llm = ChatGoogleGenerativeAI( model=model, api_key=api_key, temperature=TEMPERATURE)
 
     def gen_query_from_memory(self, question: str, memory: str, k: int = 2)-> str:
         template = """Bạn là một trợ lý hữu ích tạo ra duy nhất một câu hỏi rõ ràng chi tiết dể dễ dàng truy vấn trong vector database từ một câu hỏi đầu vào và một bộ nhớ trước đó.

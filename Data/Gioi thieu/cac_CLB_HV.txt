@@ -1,7 +1,0 @@
-Học viện công nghệ bưu chính viễn thông có 28 câu lạc bộ
-Có 4 CLB về kỹ năng mềm: CDA (CLB những nhà quản trị năng động sáng tạo), S4C (Skills for crowd), Sổ Media (CLB về chụp ảnh cũng như quay dựng media), CLB multimedia
-Có 8 CLB về học thuật: CLB IT, CLB Lập trình PTIT (Pro PTIT), Câu lạc bộ Tài chính kế toán - AFC, CLB Tiếng Anh (ELFs), CLB An toàn thông tin (ISP Club), CLB Điện tử PTIT (EIE), Google Developer Student Club - GDSC PTIT, CLB Hỗ trợ Học tập - LSC PTIT
-Có 8 CLB về thể thao: CLB bóng đá, CLB bóng rổ, CLB bóng chuyền, CLB cầu lông, CLB Taekwondo PTIT, CLB võ thuật mở rộng, CLB thể thao điện tử, CLB PTIT Street Workout
-Có 6 CLB về văn hóa, văn nghệ: CLB sách và hành động PTIT, CLB Guitar PTIT, PTIT Guitar Club, CLB Văn hóa nghệ thuật (clb về hát, nhảy, múa), PCA - CLB Mỹ thuật Sáng tạo PTIT, MCP - Câu lạc bộ MC HVCNBCVT
-Có 2 CLB về hoạt động cộng đồng: CLB Sinh Viên Tình Nguyện, Đội máu PTIT
-Ngoài ra, không thể không kể đến các đội nhóm Tôi Yêu PTIT, Đội cờ đỏ, ban chấp hành các Liên chi khoa và CTV văn phòng Đoàn Thanh niên

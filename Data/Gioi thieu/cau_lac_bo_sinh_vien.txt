@@ -1,45 +1,31 @@
-danh sách chủ nhiệm các Câu lạc bộ của sinh viên Học viện Công nghệ Bưu Chính Viễn Thông PTIT
+Học viện có 28 câu lạc bộ của sinh viên
+Có 4 CLB về kỹ năng mềm: CDA (CLB những nhà quản trị năng động sáng tạo), S4C (Skills for crowd), Sổ Media (CLB về chụp ảnh cũng như quay dựng media), CLB multimedia
+Có 8 CLB về học thuật: CLB IT, CLB Lập trình PTIT (Pro PTIT), Câu lạc bộ Tài chính kế toán - AFC, CLB Tiếng Anh (ELFs), CLB An toàn thông tin (ISP Club), CLB Điện tử PTIT (EIE), Google Developer Student Club - GDSC PTIT, CLB Hỗ trợ Học tập - LSC PTIT
+Có 8 CLB về thể thao: CLB bóng đá, CLB bóng rổ, CLB bóng chuyền, CLB cầu lông, CLB Taekwondo PTIT, CLB võ thuật mở rộng, CLB thể thao điện tử, CLB PTIT Street Workout
+Có 6 CLB về văn hóa, văn nghệ: CLB sách và hành động PTIT, CLB Guitar PTIT, PTIT Guitar Club, CLB Văn hóa nghệ thuật (clb về hát, nhảy, múa), PCA - CLB Mỹ thuật Sáng tạo PTIT, MCP - Câu lạc bộ MC HVCNBCVT
+Có 2 CLB về hoạt động cộng đồng: CLB Sinh Viên Tình Nguyện, Đội máu PTIT
+Ngoài ra, không thể không kể đến các đội nhóm Tôi Yêu PTIT, Đội cờ đỏ, ban chấp hành các Liên chi khoa và CTV văn phòng Đoàn Thanh niên
 
+chủ nhiệm các Câu lạc bộ của sinh viên Học viện Công nghệ Bưu Chính Viễn Thông PTIT
 chủ nhiệm Câu lạc bộ Văn hóa nghệ thuật là Nguyễn Hoàng Nghĩa 
-
 chủ nhiệm Đội Thanh niên vận động hiến máu Học viện Công nghệ Bưu chính Viễn thông là Nguyễn Thị Kim Nguyên  
-
 chủ nhiệm Câu lạc bộ Guitar Học viện Công nghệ Bưu chính Viễn thông - PGC là Nguyễn Thị Thu Hoài 
-
 chủ nhiệm Câu lạc bộ Taekwondo PTIT là Nguyễn Đình Khánh Linh 
-
 chủ nhiệm Đội cờ đỏ PTIT là Trần Thị Linh
-
 chủ nhiệm Câu lạc bộ Lập trình PTIT là Đặng Trung Hiếu 
-
 chủ nhiệm Câu lạc bộ Multimedia PTIT là Hồ Hoàng Long 
-
 chủ nhiệm Câu lạc bộ EMAlà Hoàng Đình Phú 
-
 chủ nhiệm Câu lạc bộ IT PTIT là Kiều Linh Trang 
-
 chủ nhiệm Câu lạc bộ Truyền Thông & Kỹ Năng Mềm S4C PTIT là Trần Minh Anh 
-
 chủ nhiệm Câu lạc bộ Sổ Medialà Nguyễn Ngọc Lân 
-
 chủ nhiệm Câu lạc bộ Bóng đá Bưu chínhlà Đinh Viết Chiến 
-
 chủ nhiệm Câu lạc bộ Điện tử PTIT là Trần Đức Mạnh 
-
 chủ nhiệm Câu lạc bộ Sách và Hành động PTIT là Lê Minh Hạnh 
-
 chủ nhiệm UP Community là Nguyễn Thị Giang Anh 
-
 chủ nhiệm Câu lạc bộ Guitar PTIT - GPClà Đồng Gia Bảo 
-
 chủ nhiệm Câu lạc bộ GDSC PTIT là Nguyễn Quang Minh 
-
 chủ nhiệm Câu lạc bộ MC PTIT - MCP là Nguyễn Đức Đoàn 
-
 chủ nhiệm Câu lạc bộ Hỗ trợ Học tập - LSC PTIT là Nguyễn Khánh Linh  
-
 chủ nhiệm ĐỘI LỄ TÂN PTIT là Trần Hồng Ngọc 
-
 chủ nhiệm Câu lạc bộ Nhà Sáng Tạo Game PTIT là Lưu Minh Hiếu 
-
 chủ nhiệm Câu lạc bộ công nghệ thông tin UDU là Trần Đức Định

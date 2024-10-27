@@ -23,9 +23,11 @@ class Retriever(MultiVectorRetriever):
                 collection_name="documents", 
                 embedding_function= GoogleGenerativeAIEmbeddings(
                     model=embedding_model,
-                    google_api_key= api_key)),
+                    google_api_key= api_key, task_type="retrieval_document")),
             byte_store= InMemoryByteStore(), 
-            id_key="doc_id"
+            id_key="doc_id",
+            search_type= 'mmr',
+            search_kwargs= {'k': 10}
         )
 
 
