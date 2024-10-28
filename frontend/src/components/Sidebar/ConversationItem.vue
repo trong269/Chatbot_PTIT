@@ -1,7 +1,11 @@
 <template>
   <li class="conversation" :class="{ active }">
     <RouterLink :to="'/chat/' + conversation.conversation_id" class="label">
-      <span>{{ conversation.title }}</span>
+      <span>{{
+        conversation.title.length > 20
+          ? conversation.title.substring(0, 20) + '...'
+          : conversation.title
+      }}</span>
     </RouterLink>
     <div class="more">
       <i class="pi pi-ellipsis-h" @click="toggle"></i>
@@ -11,12 +15,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { Conversation } from '../../models/chat'
 import { deleteConversation, endConversation } from '../../services/chat-service'
 
 const emit = defineEmits<{
   (e: 'deleted'): void
+  (e: 'ended'): void
 }>()
 const props = defineProps<{
   conversation: Conversation
@@ -29,6 +34,7 @@ const ITEM_END = {
   icon: 'pi pi-times',
   command: async () => {
     await endConversation(props.conversation.conversation_id)
+    emit('ended')
   },
 }
 const ITEM_DELETE = {
@@ -39,7 +45,7 @@ const ITEM_DELETE = {
     emit('deleted')
   },
 }
-const items = ref(props.conversation.end_time ? [ITEM_DELETE] : [ITEM_END, ITEM_DELETE])
+const items = computed(() => props.conversation.end_time ? [ITEM_DELETE] : [ITEM_END, ITEM_DELETE])
 
 const toggle = (event: any) => {
   menu.value.toggle(event)

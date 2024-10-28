@@ -1,18 +1,23 @@
 <template>
-  <div class="messages_ctn">
+  <div ref="container" class="messages_ctn">
     <ChatMessage v-for="msg in messages" :key="msg.content" :data="msg" />
-    <ChatMessage v-if="composing" :data="{ sender: 'bot' }" />
+    <ChatAnswer v-if="composing" composing />
   </div>
 </template>
 
 <script setup lang="ts">
-import { Message } from '../models/chat'
+import { onUpdated, ref, watch } from 'vue'
+import { SimpleMessage } from '../models/chat'
+import ChatAnswer from './ChatAnswer.vue'
 import ChatMessage from './ChatMessage.vue'
 
-defineProps<{
-  messages: Message[]
+const { composing } = defineProps<{
+  messages: SimpleMessage[]
   composing: boolean
 }>()
+const container = ref<HTMLDivElement>()
+
+onUpdated(() => container.value?.scrollTo(0, container.value.scrollHeight))
 </script>
 
 <style scoped>
@@ -30,16 +35,9 @@ defineProps<{
   position: relative;
   padding: 30px;
 }
-.messages_ctn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/src/assets/logo.png');
+.messages_ctn {
+  background-image: url('/src/assets/logo-trans.png');
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.1;
 }
 </style>

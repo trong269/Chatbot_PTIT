@@ -1,8 +1,15 @@
 export type Sender = 'user' | 'bot'
 
-export interface Message {
+export interface SimpleMessage {
   sender: Sender
-  content?: string
+  content: string
+}
+
+export interface Message {
+  message_id: number
+  sender: Sender
+  content: string
+  conversation_id: number
 }
 
 export interface Answer extends Message {

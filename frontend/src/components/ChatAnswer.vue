@@ -3,12 +3,31 @@
     <div class="chat__ans_avatar">
       <Avatar label="P" shape="circle" />
     </div>
-    <WaitingDots v-if="!content" />
-    <p v-if="content" class="chat__ans_content" v-html="processedContent"></p>
+    <WaitingDots v-if="composing" />
+    <p v-else" class="chat__ans_content" v-html="processedContent"></p>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<script setup lang="ts">
+import { marked } from 'marked'
+import WaitingDots from './WaitingDots.vue'
+import { computed } from 'vue'
+
+const { content } = defineProps<{
+  content?: string
+  composing?: boolean
+}>()
+const processedContent = computed(() => {
+  const renderer = new marked.Renderer();
+  renderer.link = function( {href, text}: {href: string, text: string} ) {
+    console.log(href)
+    return '<a target="_blank" href="'+ href +'">' + text + '</a>';
+  }
+  return content && marked(content.replace(/\\n/g, '<br>'), {renderer})
+})
+</script>
+
+<style lang="scss">
 .chat__ans {
   align-self: flex-start;
   background: transparent;
@@ -30,24 +49,15 @@
 
   .chat__ans_content {
     margin: 0;
+
+    a {
+      text-decoration: underline;
+    }
+
+    p,
+    ul {
+      margin-top: 0;
+    }
   }
 }
 </style>
-
-<script setup lang="ts">
-import { computed } from 'vue'
-import WaitingDots from './WaitingDots.vue'
-
-const { content } = defineProps<{
-  content?: string
-}>()
-
-const processedContent = computed(() => {
-  if (!content) return ''
-  let processed = content
-    .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>') // Bold text
-    .replace(/\*(.*?)\*/g, '<li>$1</li>') // List item
-    .replace(/\n/g, '<br>') // Line break
-  return processed
-})
-</script>

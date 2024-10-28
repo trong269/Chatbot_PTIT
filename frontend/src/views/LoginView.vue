@@ -39,7 +39,7 @@ const doLogin = async () => {
     submitting.value = true
     const result = await login({ username: username.value, password: password.value })
     localStorage.setItem('token', result.access_token)
-    localStorage.setItem('expiration', '' + new Date().getTime() + 20*60*1000) // 20 phut
+    localStorage.setItem('expiration', new Date().getTime() + 60 * 60 * 1000 + '')
     router.push('/chat')
   } catch (error) {
     console.error(error)
