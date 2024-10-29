@@ -14,7 +14,9 @@ MAX_BATCH_SIZE = 166
 DATA_PATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\Gioi thieu"
 DATA_PATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\Chuong trinh dao tao"
 DATA_PATH3 = "C:\workspace\AI\Chatbot_PTIT\Data\Other"
-
+DATABASEPATH1 = "C:\workspace\AI\Chatbot_PTIT\Data\ChromaDB_1"
+DATABASEPATH2 = "C:\workspace\AI\Chatbot_PTIT\Data\ChromaDB_2"
+DATABASEPATH3 = "C:\workspace\AI\Chatbot_PTIT\Data\ChromaDB_3"
 # print(API_KEY)
 
 class ChatBot():
@@ -23,13 +25,13 @@ class ChatBot():
         self.top_k = top_k
         self.router = Router(api_key = self.api_key , model = model, RouteQuery = RouteQuery)
 
-        self.retriever1 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
+        self.retriever1 = Retriever(api_key = self.api_key, embedding_model = embedding_model, persist_directory=DATABASEPATH1)
         self.retriever1.add_documents_to_retriever(data_path=DATA_PATH1, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
-        self.retriever2 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
+        self.retriever2 = Retriever(api_key = self.api_key, embedding_model = embedding_model, persist_directory=DATABASEPATH2)
         self.retriever2.add_documents_to_retriever(data_path= DATA_PATH2, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
-        self.retriever3 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
+        self.retriever3 = Retriever(api_key = self.api_key, embedding_model = embedding_model, persist_directory=DATABASEPATH3)
         self.retriever3.add_documents_to_retriever(data_path= DATA_PATH3, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
@@ -44,8 +46,8 @@ class ChatBot():
         # tìm kiếm các tài liệu phù hợp
         documents = self.retrival(routing, queries)
         history_messages_text = "\n".join(history_messages) if len(history_messages) <= 10 else "\n".join(history_messages[-10 :])
-        # with open("C:\workspace\AI\Chatbot_PTIT\memory.txt", 'w' , encoding='utf-8') as f:
-        #     f.write(history_messages_text)
+        with open("C:\workspace\AI\Chatbot_PTIT\memory.txt", 'w' , encoding='utf-8') as f:
+            f.write(history_messages_text)
         print("--------------------------")
         for docs , queries in routing.items():
             print(f"có {len(queries)} thuộc về {docs}")
@@ -116,10 +118,10 @@ class ChatBot():
                 len_prev = len(results)
             else:
                 continue
-            # with open("C:\workspace\AI\Chatbot_PTIT\log2.txt", 'w' , encoding='utf-8') as f:
-            #     text = results
-            #     text = "\n---------------------------\n".join([ doc.page_content for doc in text ])
-            #     f.write(text)
+            with open("C:\workspace\AI\Chatbot_PTIT\log2.txt", 'w' , encoding='utf-8') as f:
+                text = results
+                text = "\n---------------------------\n".join([ doc.page_content for doc in text ])
+                f.write(text)
         return results
 
 # questions = "ptit có bao nhiêu câu lạc bộ ?"

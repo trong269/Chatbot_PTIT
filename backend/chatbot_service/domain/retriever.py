@@ -17,13 +17,13 @@ class UTF8TextLoader(TextLoader):
 
 # tạo lớp retriever custom
 class Retriever(MultiVectorRetriever):
-    def __init__(self, api_key , embedding_model ):
+    def __init__(self, api_key , embedding_model , persist_directory: str):
         super().__init__(
             vectorstore= Chroma(
                 collection_name="documents", 
                 embedding_function= GoogleGenerativeAIEmbeddings(
                     model=embedding_model,
-                    google_api_key= api_key, task_type="retrieval_document")),
+                    google_api_key= api_key, task_type="retrieval_document"), persist_directory= persist_directory),
             byte_store= InMemoryByteStore(), 
             id_key="doc_id",
             search_type= 'mmr',
