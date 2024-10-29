@@ -5,7 +5,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
 from .config import settings
-SQLALCHEMY_DATABASE_URL = f"postgresql://postgres:123@localhost/chatbotptit"
+SQLALCHEMY_DATABASE_URL = f"postgresql://postgres:troixanh123@localhost/chatbotptit"
 
 # SQLALCHEMY_DATABASE_URL = f"postgresql://{settings.DATABASE_USERNAME}:{settings.DATABASE_PASSWORD}@{settings.DATABASE_HOSTNAME}:{settings.DATABASE_PORT}/{settings.DATABASE_NAME}"
 
