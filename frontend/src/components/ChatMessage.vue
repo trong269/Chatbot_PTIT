@@ -4,10 +4,10 @@
 </template>
 
 <script setup lang="ts">
-import { Message } from '../models/chat'
+import { SimpleMessage } from '../models/chat'
 import ChatAnswer from './ChatAnswer.vue'
 
 defineProps<{
-  data: Message
+  data: SimpleMessage
 }>()
 </script>

@@ -1,35 +1,42 @@
 <template>
   <div class="page_ctn">
     <div class="left">
-      <ChatSidebar :conversations="conversations" @delete-conversation="fetchConversations" />
+      <ChatSidebar :conversations="conversations" :active="selected" @update="fetchAll" />
     </div>
     <div class="right">
-      <NewConversationView v-if="!conversationId" @created="fetchConversations" />
-      <ConversationView v-else />
+      <NewConversationView v-if="!selected" @created="fetchAll" />
+      <ConversationView v-else :conversation="selected" />
     </div>
     <ChatHeader />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import ChatHeader from '../../components/ChatHeader.vue'
 import ChatSidebar from '../../components/ChatSidebar.vue'
 import { Conversation } from '../../models/chat'
-import { getAllConversations } from '../../services/chat-service'
+import { getAllConversations, getConversation } from '../../services/chat-service'
 import ConversationView from './ConversationView.vue'
 import NewConversationView from './NewConversationView.vue'
 
 const route = useRoute()
-const conversationId = computed(() => Number(route.params.id))
 const conversations = ref<Conversation[]>([])
+const selected = ref<Conversation>()
 
-const fetchConversations = async () => {
+const fetchAll = async () => {
   conversations.value = await getAllConversations()
+  console.log(conversations)
+  fetchConv()
 }
 
-onMounted(fetchConversations)
+const fetchConv = async () => {
+  selected.value = route.params.id ? await getConversation(Number(route.params.id)) : undefined
+}
+
+onMounted(fetchAll)
+watch(() => route.params.id, fetchConv)
 </script>
 
 <style lang="scss" scoped>

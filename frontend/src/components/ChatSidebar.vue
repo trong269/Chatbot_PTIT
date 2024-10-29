@@ -11,8 +11,9 @@
           v-for="conversation in conversations"
           :key="conversation.conversation_id"
           :conversation="conversation"
-          :active="selectedConversation?.conversation_id === conversation.conversation_id"
-          @deleted="$emit('deleteConversation')"
+          :active="conversation.conversation_id === active?.conversation_id"
+          @deleted="handleDelete(conversation)"
+          @ended="handleEnd(conversation)"
         />
       </ul>
     </template>
@@ -22,21 +23,29 @@
 <script setup lang="ts">
 import Card from 'primevue/card'
 import Divider from 'primevue/divider'
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRouter } from 'vue-router'
 import { Conversation } from '../models/chat'
 import ConversationItem from './Sidebar/ConversationItem.vue'
 
-defineEmits<{
-  (e: 'deleteConversation'): void
+const emit = defineEmits<{
+  (e: 'update'): void
 }>()
-const { conversations } = defineProps<{
+const router = useRouter()
+const { conversations, active } = defineProps<{
   conversations: Conversation[]
+  active?: Conversation
 }>()
-const route = useRoute()
-const selectedConversation = computed(() =>
-  conversations.find((c) => c.conversation_id === Number(route.params.id))
-)
+
+const handleDelete = (conversation: Conversation) => {
+  emit('update')
+  if (conversation.conversation_id === active?.conversation_id) {
+    router.replace('/chat')
+  }
+}
+
+const handleEnd = (_: Conversation) => {
+  emit('update')
+}
 </script>
 
 <style lang="scss" scoped>

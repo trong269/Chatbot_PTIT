@@ -16,17 +16,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { computed, ref, watch } from 'vue'
 import MessagesContainer from '../../components/MessagesContainer.vue'
-import { Conversation } from '../../models/chat'
-import { getConversation, sendQuestion } from '../../services/chat-service'
+import { Conversation, SimpleMessage } from '../../models/chat'
+import { sendQuestion } from '../../services/chat-service'
 
-const route = useRoute()
-
-const conversationId = computed(() => Number(route.params.id))
-const conversation = ref<Conversation>()
-const messages = computed(() => conversation.value?.messages || [])
+const { conversation } = defineProps<{ conversation: Conversation }>()
+const messages = computed<SimpleMessage[]>(() => conversation.messages.sort((a, b) => a.message_id - b.message_id) || [])
 const question = ref('')
 const composing = ref(false)
 
@@ -37,20 +33,19 @@ const doSendQuestion = async () => {
     messages.value.push({ content, sender: 'user' })
     question.value = ''
     composing.value = true
-    const answer = await sendQuestion(conversationId.value, content)
-    messages.value.push(answer)
+    const answer = await sendQuestion(conversation.conversation_id, content)
+    if (answer.conversation_id == conversation.conversation_id) {
+      messages.value.push(answer)
+    }
   } finally {
     composing.value = false
   }
 }
 
-const fetchConversation = async () => {
-  if (!conversationId.value) return
-  conversation.value = await getConversation(conversationId.value)
-}
-
-onMounted(fetchConversation)
-watch(conversationId, fetchConversation)
+watch(
+  () => conversation,
+  () => (composing.value = false)
+)
 </script>
 
 <style lang="scss" scoped>
