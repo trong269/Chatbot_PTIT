@@ -7,8 +7,17 @@ from langchain.storage import InMemoryByteStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.load import dumps, loads
 from langchain_core.documents.base import Document
-from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.config import EMBEDDING_MODEL
+from langchain_huggingface import HuggingFaceEmbeddings
 
+
+embedding = HuggingFaceEmbeddings(model_name='BAAI/bge-m3')
+
+def creat_doc_ids (documents: list[Document])-> list[str]:
+    """ tạo id cho từng văn bản với seed = 42"""
+    seed = 42
+    doc_ids = [str(uuid.uuid5(uuid.NAMESPACE_DNS, f"{seed}_{i}")) for i in range(len(documents))]
+    return doc_ids
 
 # Tạo lớp loader tùy chỉnh với encoding 'utf-8'
 class UTF8TextLoader(TextLoader):
@@ -17,17 +26,17 @@ class UTF8TextLoader(TextLoader):
 
 # tạo lớp retriever custom
 class Retriever(MultiVectorRetriever):
-    def __init__(self, api_key , embedding_model ):
+    def __init__(self, collection_name:str ):
+        vectorstore = Chroma(
+                collection_name= collection_name, 
+                embedding_function= embedding,
+                persist_directory='.\chroma_db')
         super().__init__(
-            vectorstore= Chroma(
-                collection_name="documents", 
-                embedding_function= GoogleGenerativeAIEmbeddings(
-                    model=embedding_model,
-                    google_api_key= api_key, task_type="retrieval_document")),
+            vectorstore= vectorstore,
             byte_store= InMemoryByteStore(), 
             id_key="doc_id",
             search_type= 'mmr',
-            search_kwargs= {'k': 10}
+            search_kwargs= {'k': 5}
         )
 
 
@@ -44,7 +53,8 @@ class Retriever(MultiVectorRetriever):
             chunk_overlap= chunk_overlap,
         )
         # tạo id cho từng văn bản
-        doc_ids = [str(uuid.uuid4()) for _ in documents]
+        # doc_ids = [str(uuid.uuid4()) for _ in documents]
+        doc_ids = creat_doc_ids(documents)
         chunks = []
         for i in range(len(documents)):
             chunked_doc = text_splitter.split_documents([documents[i]])
@@ -74,7 +84,12 @@ class Retriever(MultiVectorRetriever):
             self.vectorstore.add_documents(batch)
         # thêm tài liệu gốc vào docstore
         self.docstore.mset(list(zip(doc_ids, documents)))
-    
+    def load_docstore(self, data_path: str)-> None:
+        """ load tài liệu vào docstore"""
+        documents = self.documents_loader(data_path)
+        doc_ids = creat_doc_ids(documents)
+        self.docstore.mset(list(zip(doc_ids, documents)))
+
     def multi_query(self, queries: list[str], top_k: int) -> list[Document]:
         """ thực hiện nhiều truy vấn và xếp hạng lại các tài liệu được trả về"""
         retrieved_results = self.map().invoke(queries)

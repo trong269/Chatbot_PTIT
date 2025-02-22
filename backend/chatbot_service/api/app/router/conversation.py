@@ -12,8 +12,7 @@ router = APIRouter(
 )
 
 
-bot = ChatBot(top_k=7)
-# history_messages = []
+bot = ChatBot(top_k=3)
 
 @router.get("/", response_model=List[schemas.ConversationResponse])
 def get_conversation(db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):

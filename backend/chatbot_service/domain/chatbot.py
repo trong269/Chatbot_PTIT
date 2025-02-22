@@ -1,21 +1,13 @@
 from domain.retriever import Retriever
 from domain.query_translation import QueryTranslation
 from domain.routing import Router, RouteQuery
-from domain.api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL, TEMPERATURE
-# from .api_key import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL
+from domain.config import API_KEY, GEMINI_MODEL, EMBEDDING_MODEL, TEMPERATURE, DATA_PATH1, DATA_PATH2, DATA_PATH3, CHUNK_SIZE, OVERLAP_SIZE, MAX_BATCH_SIZE
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.documents.base import Document
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-CHUNK_SIZE = 300
-OVERLAP_SIZE = 50
-MAX_BATCH_SIZE = 166
-DATA_PATH1 = "D:\Workspace\Chatbot_PTIT\Data\Gioi thieu"
-DATA_PATH2 = "D:\Workspace\Chatbot_PTIT\Data\Chuong trinh dao tao"
-DATA_PATH3 = "D:\Workspace\Chatbot_PTIT\Data\Other"
 
-# print(API_KEY)
 
 class ChatBot():
     def __init__(self , api_key: str = API_KEY , model: str = GEMINI_MODEL, embedding_model: str = EMBEDDING_MODEL, top_k: int = 5 ):
@@ -23,14 +15,17 @@ class ChatBot():
         self.top_k = top_k
         self.router = Router(api_key = self.api_key , model = model, RouteQuery = RouteQuery)
 
-        self.retriever1 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever1.add_documents_to_retriever(data_path=DATA_PATH1, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever1 = Retriever(collection_name= "documents1")
+        self.retriever1.load_docstore(DATA_PATH1)
+        # self.retriever1.add_documents_to_retriever(data_path=DATA_PATH1, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
-        self.retriever2 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever2.add_documents_to_retriever(data_path= DATA_PATH2, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever2 = Retriever(collection_name= "documents2")
+        self.retriever2.load_docstore(DATA_PATH2)
+        # self.retriever2.add_documents_to_retriever(data_path= DATA_PATH2, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
-        self.retriever3 = Retriever(api_key = self.api_key, embedding_model = embedding_model)
-        self.retriever3.add_documents_to_retriever(data_path= DATA_PATH3, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
+        self.retriever3 = Retriever(collection_name= "documents3")
+        self.retriever3.load_docstore(DATA_PATH3)
+        # self.retriever3.add_documents_to_retriever(data_path= DATA_PATH3, chunk_size = CHUNK_SIZE, chunk_overlap = OVERLAP_SIZE, max_batch_size = MAX_BATCH_SIZE)
 
         self.query_translation = QueryTranslation(api_key = self.api_key, model = model)
         self.llm = ChatGoogleGenerativeAI( model = model, api_key = self.api_key, temperature= TEMPERATURE)
@@ -44,8 +39,8 @@ class ChatBot():
         # tìm kiếm các tài liệu phù hợp
         documents = self.retrival(routing, queries)
         history_messages_text = "\n".join(history_messages) if len(history_messages) <= 10 else "\n".join(history_messages[-10 :])
-        # with open("C:\workspace\AI\Chatbot_PTIT\memory.txt", 'w' , encoding='utf-8') as f:
-        #     f.write(history_messages_text)
+        with open("C:\workspace\AI\Chatbot_PTIT\memory.txt", 'w' , encoding='utf-8') as f:
+            f.write(history_messages_text)
         print("--------------------------")
         for docs , queries in routing.items():
             print(f"có {len(queries)} thuộc về {docs}")
@@ -116,15 +111,9 @@ class ChatBot():
                 len_prev = len(results)
             else:
                 continue
-            # with open("C:\workspace\AI\Chatbot_PTIT\log2.txt", 'w' , encoding='utf-8') as f:
-            #     text = results
-            #     text = "\n---------------------------\n".join([ doc.page_content for doc in text ])
-            #     f.write(text)
+            with open("C:\workspace\AI\Chatbot_PTIT\log.txt", 'w' , encoding='utf-8') as f:
+                text = results
+                text = "\n---------------------------\n".join([ doc.page_content for doc in text ])
+                f.write(text)
         return results
 
-# questions = "ptit có bao nhiêu câu lạc bộ ?"
-
-# chatbot = ChatBot( api_key= API_KEY, model= GEMINI_MODEL, embedding_model= EMBEDDING_MODEL, top_k = 5)
-
-# anwser = chatbot.chat(questions)
-# print(anwser)
