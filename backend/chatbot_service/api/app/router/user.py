@@ -68,17 +68,25 @@ async def update_user(user_update: schemas.UserUpdate, db: Session = Depends(get
         if user_query.first():
             raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"email: {user_update.email} already exits")
         
-    utils.validate_password_strength(user_update.password)
-        
-    user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
+    if(user_update.password.strip() != ""):
+        utils.validate_password_strength(user_update.password)
+        user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
 
-    user.password = utils.hash(user_update.password)
-    user.email = user_update.email
-    user.full_name = user_update.full_name
+        user.password = utils.hash(user_update.password)
+        user.email = user_update.email
+        user.full_name = user_update.full_name
+        db.commit()
+        db.refresh(user)
+        return user
+    else:
+        user = db.query(models.User).filter(models.User.user_id == current_user.user_id).first()
 
-    db.commit()
-    db.refresh(user)
-    return user
+        user.email = user_update.email
+        user.full_name = user_update.full_name
+        db.commit()
+        db.refresh(user)
+        return user
+    
 
 @router.delete("/{user_id}",status_code=status.HTTP_204_NO_CONTENT)
 async def delete_user(user_id: int, db: Session = Depends(get_db), current_user = Depends(oauth2.get_current_user)):
