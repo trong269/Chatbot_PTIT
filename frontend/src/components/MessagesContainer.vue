@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { onUpdated, ref, watch } from 'vue'
+import { onUpdated, ref } from 'vue'
 import { SimpleMessage } from '../models/chat'
 import ChatAnswer from './ChatAnswer.vue'
 import ChatMessage from './ChatMessage.vue'
